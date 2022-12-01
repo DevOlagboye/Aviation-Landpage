@@ -1,0 +1,15 @@
+.hero-container {
+    background: url("../../Assets/images/heropage-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+.hero-aviation-aircraft {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-aviation-aircraft img {
+    margin-top: 150px;
+}
