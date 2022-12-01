@@ -5,11 +5,42 @@
     height: 700px;
 }
 
+.hero-menu {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-menu img {
+    width: 150px;
+    margin-right: 37%;
+}
+
+.hero-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.hero-menu ul li {
+    list-style: none;
+    color: #FFF;
+    margin: 0px 20px 0px 20px;
+}
+
+.hero-menu button {
+    background: transparent;
+    color: #FFF;
+    border: 2px #FFF solid;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+}
+
 .hero-aviation-aircraft {
     display: flex;
     justify-content: center;
 }
 
 .hero-aviation-aircraft img {
-    margin-top: 150px;
+    margin-top: 70px;
 }
