@@ -44,3 +44,18 @@
 .hero-aviation-aircraft img {
     margin-top: 70px;
 }
+
+.hero-page-text {
+    text-align: center;
+}
+
+.hero-page-text h4 {
+    color: #FFF;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.hero-page-text p {
+    color: #FFF;
+    font-size: 11px;
+}
