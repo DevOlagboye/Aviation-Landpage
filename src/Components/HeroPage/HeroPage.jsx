@@ -18,6 +18,9 @@ const HeroPage = () => {
         <div className='hero-aviation-aircraft'>
             <img src={mainAircraft} alt=""  />
         </div>
+        <div className='hero-page-text'>
+
+        </div>
     </div>
   )
 }
