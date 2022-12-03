@@ -26,6 +26,12 @@
     list-style: none;
     color: #FFF;
     margin: 0px 20px 0px 20px;
+    transition: ease-in-out 0.6s;
+}
+
+.hero-menu ul li:hover {
+    cursor: pointer;
+    color: #313FF7;
 }
 
 .hero-menu button {
@@ -34,6 +40,10 @@
     border: 2px #FFF solid;
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
+}
+
+.hero-menu button:hover {
+    cursor: pointer;
 }
 
 .hero-aviation-aircraft {
