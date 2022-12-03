@@ -34,6 +34,10 @@
     color: #313FF7;
 }
 
+.hero-menu ul li.active {
+    border-bottom: #313FF7 3px solid;
+}
+
 .hero-menu button {
     background: transparent;
     color: #FFF;

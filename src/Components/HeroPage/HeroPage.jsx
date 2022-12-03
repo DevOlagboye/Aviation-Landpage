@@ -8,7 +8,7 @@ const HeroPage = () => {
         <div className='hero-menu'>
             <img src={aircraftLogo} alt=""  />
             <ul>
-                <li>All Flight</li>
+                <li className='active'>All Flight</li>
                 <li>Schedule</li>
                 <li>Passengers</li>
                 <li>Your Orders</li>
