@@ -2,6 +2,9 @@ import React from 'react'
 import "./HeroPage.css"
 import mainAircraft from "../../Assets/images/MainAircraft.png"
 import aircraftLogo from "../../Assets/images/logo.png"
+import bookingLocation from "../../Assets/images/booking-location.png"
+import travelersIcon from "../../Assets/images/travelers-icon.png"
+import checkInIcon from "../../Assets/images/check-in-icon.png"
 const HeroPage = () => {
   return (
     <div className='hero-container'>
@@ -36,6 +39,32 @@ const HeroPage = () => {
                     </div>
                 </div>
             </div>
+            <div className='booking-features'>
+                    <div className='booking-features-details'>
+                        <img src={bookingLocation} alt="booking location" />
+                        <h5>Location<br/>
+                            <span>Where are you going?</span>
+                        </h5>
+                    </div>
+                    <div className='booking-features-details'>
+                        <img src={travelersIcon} alt="Travelers Icon" />
+                        <h5>Travelers<br/>
+                            <span>Add guest</span>
+                        </h5>
+                    </div>
+                    <div className='booking-features-details'>
+                        <img src={checkInIcon} alt="Check In Icon" />
+                        <h5>Check-in<br/>
+                            <span>Add date</span>
+                        </h5>
+                    </div>
+                    <div className='booking-features-details'>
+                        <img src={checkInIcon} alt="Check In Icon" />
+                        <h5>Check-out<br/>
+                            <span>Add date</span>
+                        </h5>
+                    </div>
+                </div>
         </div>
     </div>
   )
