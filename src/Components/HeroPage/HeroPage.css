@@ -2,7 +2,7 @@
     background: url("../../Assets/images/heropage-background.png");
     background-position: center;
     background-repeat: no-repeat;
-    height: 850px;
+    height: 800px;
 }
 
 .hero-menu {
@@ -76,7 +76,7 @@
 
 .booking-container {
     background-color: #FFF;
-    height: 160px;
+    height: 210px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -127,6 +127,7 @@
 .booking-features {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .booking-features-details {
@@ -144,4 +145,15 @@
 
 .booking-features-details h5 span {
     font-size: 11px;
+}
+
+.book-button {
+    display: block;
+    margin: 20px auto;
+    background: #313FF7;
+    color: #FFF;
+    padding: 15px 40px 15px 40px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px 10px rgba(70, 70, 232, 0.166);
 }

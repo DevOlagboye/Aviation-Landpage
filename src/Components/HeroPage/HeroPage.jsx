@@ -65,6 +65,11 @@ const HeroPage = () => {
                         </h5>
                     </div>
                 </div>
+                <form>
+                    <button type='submit' className='book-button'>
+                        Book Now
+                    </button>
+                </form>
         </div>
     </div>
   )
