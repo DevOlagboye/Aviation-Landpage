@@ -1,8 +1,11 @@
 import React from 'react'
+import "./Booking.css"
 
 const Booking = () => {
   return (
-    <div>Booking</div>
+    <div>
+        <h4>Features</h4>
+    </div>
   )
 }
 

@@ -21,6 +21,8 @@ const HeroPage = () => {
         <div className='hero-page-text'>
             <h4>Travel Around The World</h4>
             <p>Aviation Travel around the world One of the advantages of being disorganized is that one is always having surprising discoveries</p>
+        </div>
+        <div className='booking-container'>
 
         </div>
     </div>

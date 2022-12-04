@@ -2,7 +2,8 @@
     background: url("../../Assets/images/heropage-background.png");
     background-position: center;
     background-repeat: no-repeat;
-    height: 700px;
+    height: 750px;
+    position: relative;
 }
 
 .hero-menu {
@@ -72,4 +73,11 @@
 .hero-page-text p {
     color: #FFF;
     font-size: 14px;
+}
+
+.booking-container {
+    background-color: #FFF;
+    height: 150px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.2);
 }

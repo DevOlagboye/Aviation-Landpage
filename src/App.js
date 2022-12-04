@@ -1,12 +1,12 @@
 import './App.css';
 import HeroPage from './Components/HeroPage/HeroPage';
-import Booking from './Components/Booking/Booking';
+import Features from "./Components/Features/Features"
 
 function App() {
   return (
     <div>
       <HeroPage/>
-      <Booking/>
+      <Features/>
     </div>
   );
 }
