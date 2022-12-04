@@ -24,7 +24,17 @@ const HeroPage = () => {
         </div>
         <div className='booking-container'>
             <div className='booking-category'>
-                
+                <div className='booking-category-list'>
+                    <div className='active'>
+                        <h5>Economy</h5>
+                    </div>
+                    <div>
+                        <h5>Business</h5>
+                    </div>
+                    <div>
+                        <h5>First</h5>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

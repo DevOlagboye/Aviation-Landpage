@@ -94,3 +94,28 @@
     position: absolute;
     top: -50px;
 }
+
+.booking-category-list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.booking-category-list h5 {
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.booking-category div {
+    margin: 0px 30px 0px 0px;
+}
+
+.booking-category div h5 {
+    padding: 0px 20px
+}
+
+.booking-category div.active {
+    background: #313FF7;
+    color: #FFF;
+    height: 50px;
+    border-top-left-radius: 20px;
+}
