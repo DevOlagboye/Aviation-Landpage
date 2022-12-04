@@ -80,7 +80,7 @@
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    box-shadow: 2px 2px 10px 15px rgba(0, 0, 0, 0.04);
+    box-shadow: 2px 2px 20px 40px rgba(0, 0, 0, 0.05);
     margin: 90px;
     position: relative;
 }
@@ -156,4 +156,8 @@
     border: none;
     border-radius: 20px;
     box-shadow: 3px 3px 15px 10px rgba(70, 70, 232, 0.166);
+}
+
+.book-button:hover {
+    cursor: pointer;
 }
