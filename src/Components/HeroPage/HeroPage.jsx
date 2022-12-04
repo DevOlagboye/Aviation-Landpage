@@ -23,7 +23,9 @@ const HeroPage = () => {
             <p>Aviation Travel around the world One of the advantages of being disorganized is that one is always having surprising discoveries</p>
         </div>
         <div className='booking-container'>
-
+            <div className='booking-category'>
+                
+            </div>
         </div>
     </div>
   )

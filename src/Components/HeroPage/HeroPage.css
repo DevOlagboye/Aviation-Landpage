@@ -2,8 +2,7 @@
     background: url("../../Assets/images/heropage-background.png");
     background-position: center;
     background-repeat: no-repeat;
-    height: 750px;
-    position: relative;
+    height: 850px;
 }
 
 .hero-menu {
@@ -77,7 +76,21 @@
 
 .booking-container {
     background-color: #FFF;
-    height: 150px;
-    border-radius: 50px;
-    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.2);
+    height: 200px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 2px 2px 10px 15px rgba(0, 0, 0, 0.04);
+    margin: 90px;
+    position: relative;
+}
+
+.booking-category {
+    background: #FFF;
+    height: 50px;
+    width: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    top: -50px;
 }
