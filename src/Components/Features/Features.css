@@ -15,9 +15,24 @@
 
 .feature-card {
     margin-top: 50px;
-    height: 380px;
-    width: 280px;
+    height: 330px;
+    width: 230px;
     background: #FFF;
     box-shadow: 2px 2px 20px 20px rgba(0, 0, 0, 0.03);
     border-radius: 120px;
+    text-align: center;
+    padding: 10px;
+}
+
+.feature-card img {
+    margin-top: 30px;
+}
+
+.feature-card h5 {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.feature-card p {
+    margin-top: 20px;
 }
