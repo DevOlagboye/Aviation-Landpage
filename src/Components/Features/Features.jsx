@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Features.css"
 import bestGuideIcon from "../../Assets/images/Best Guide.png"
+import { FaArrowRight } from "react-icons/fa";
 
 const Booking = () => {
   return (
@@ -11,6 +12,7 @@ const Booking = () => {
             <img src={bestGuideIcon} alt="Best Guide Icon" />
             <h5>Best Guide</h5>
             <p>Suspendisse ultrices nibh <br/> non cursus sagittis. Morbi <br/>dictum consequat ex, quis <br/>finibus magna.</p>
+            <a href='##'><FaArrowRight className='link-icon'/></a>
           </div>
         </div>
     </div>
