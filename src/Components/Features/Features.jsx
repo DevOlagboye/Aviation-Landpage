@@ -1,6 +1,9 @@
 import React from 'react'
 import "./Features.css"
 import bestGuideIcon from "../../Assets/images/Best Guide.png"
+import discountIcon from "../../Assets/images/discount.png"
+import privateIcon from "../../Assets/images/Private-icon.png"
+import onlineSupportIcon from "../../Assets/images/online-support-icon.png"
 import { FaArrowRight } from "react-icons/fa";
 
 const Booking = () => {
@@ -11,6 +14,24 @@ const Booking = () => {
           <div className='feature-card'>
             <img src={bestGuideIcon} alt="Best Guide Icon" />
             <h5>Best Guide</h5>
+            <p>Suspendisse ultrices nibh <br/> non cursus sagittis. Morbi <br/>dictum consequat ex, quis <br/>finibus magna.</p>
+            <a href='##'><FaArrowRight className='link-icon'/></a>
+          </div>
+          <div className='feature-card'>
+            <img src={discountIcon} alt="More Discount Icon" />
+            <h5>More Discount</h5>
+            <p>Suspendisse ultrices nibh <br/> non cursus sagittis. Morbi <br/>dictum consequat ex, quis <br/>finibus magna.</p>
+            <a href='##'><FaArrowRight className='link-icon'/></a>
+          </div>
+          <div className='feature-card'>
+            <img src={privateIcon} alt="Private Icon" />
+            <h5>Private</h5>
+            <p>Suspendisse ultrices nibh <br/> non cursus sagittis. Morbi <br/>dictum consequat ex, quis <br/>finibus magna.</p>
+            <a href='##'><FaArrowRight className='link-icon'/></a>
+          </div>
+          <div className='feature-card'>
+            <img src={onlineSupportIcon} alt="Online Support Icon" />
+            <h5>Online Support </h5>
             <p>Suspendisse ultrices nibh <br/> non cursus sagittis. Morbi <br/>dictum consequat ex, quis <br/>finibus magna.</p>
             <a href='##'><FaArrowRight className='link-icon'/></a>
           </div>
