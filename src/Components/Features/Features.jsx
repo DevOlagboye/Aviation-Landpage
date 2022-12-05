@@ -4,7 +4,7 @@ import "./Features.css"
 const Booking = () => {
   return (
     <div className='features-container'>
-        <h4>Features</h4>
+        <h4 className='our-feature-main-text'>Our Features</h4>
     </div>
   )
 }

@@ -1,3 +1,9 @@
 .features-container {
     margin-top: 200px;
+    padding: 50px;
+}
+
+.our-feature-main-text {
+    text-align: center;
+    font-size: 35px;
 }
