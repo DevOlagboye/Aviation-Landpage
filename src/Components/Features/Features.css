@@ -7,3 +7,17 @@
     text-align: center;
     font-size: 35px;
 }
+
+.features-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.feature-card {
+    margin-top: 50px;
+    height: 380px;
+    width: 280px;
+    background: #FFF;
+    box-shadow: 2px 2px 20px 20px rgba(0, 0, 0, 0.03);
+    border-radius: 120px;
+}
