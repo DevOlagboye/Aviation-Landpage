@@ -27,6 +27,7 @@
     color: #FFF;
     margin: 0px 20px 0px 20px;
     transition: ease-in-out 0.6s;
+    font-family: "Montserrat", sans-serif;
 }
 
 .hero-menu ul li:hover {
