@@ -169,3 +169,9 @@
 .book-button:hover {
     cursor: pointer;
 }
+
+@media (max-width: 500px) {
+    .hero-aviation-aircraft img {
+        width: 450px;
+    }
+}
