@@ -22,6 +22,28 @@
 
 .cta-details p {
     font-family: "Montserrat", sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 17px;
+}
+
+.cta-more-details {
+    display: flex;
+}
+
+.cta-more-details .circle {
+    width: 12px;
+    height: 12px;
+    background: #313EF7;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.cta-details button {
+    background: #313EF7;
+    padding: 15px 40px 15px 40px;
+    color: #FFF;
+    border: none;
+    border-radius: 26px;
+    box-shadow: 3px 3px 15px 10px rgba(70, 70, 232, 0.166);
 }
