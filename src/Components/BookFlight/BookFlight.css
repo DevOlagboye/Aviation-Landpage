@@ -1,7 +1,13 @@
 .book-flight-container {
     background: #010223;
-    height: 400px;
+    height: 650px;
     padding: 40px;
+}
+
+.book-flight-details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .book-flight-text-image h4 {
