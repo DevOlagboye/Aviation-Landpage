@@ -12,8 +12,13 @@
 
 .book-flight-text-image h4 {
     color: #FFF;
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    margin-bottom: 30px;
 }
 
 .book-flight-text-image p {
     color: #FFF;
+    font-family: "Montserrat", sans-serif;
 }
