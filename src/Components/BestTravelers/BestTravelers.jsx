@@ -1,6 +1,6 @@
 import React from 'react'
 import "./BestTravelers.css"
-import { besTravelers } from './data'
+import { bestTravelers } from './data'
 
 
 
@@ -9,7 +9,7 @@ const BestTravelers = () => {
     <div className='best-traveler-container'>
         <h4>Best Travelers Of This Month</h4>
     <div className='best-traveler-gallery'>
-        {besTravelers.map(bestTraveler => (
+        {bestTravelers.map(bestTraveler => (
             <div className='best-traveler-card'>
             <img src={bestTraveler.location} alt="BestTraveler Location" className='best-traveler-location'/>
             <img src={bestTraveler.profileImage} alt="BestTraveler Profile" className='best-traveler-profile' />
