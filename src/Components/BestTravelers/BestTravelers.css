@@ -11,6 +11,11 @@
     border-radius: 120px;
 }
 
-.best-traveler-card img {
+.best-traveler-card .best-traveler-location {
     width: 230px;
+}
+
+.best-traveler-card .best-traveler-profile {
+    width: 60px;
+    margin-top: -20px;
 }

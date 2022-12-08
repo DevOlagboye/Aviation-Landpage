@@ -1,6 +1,7 @@
 import React from 'react'
 import "./BestTravelers.css"
 import BestTravelerLocation1 from "../../Assets/images/BestTraveler-location1.png"
+import BestTraveler1Profile from "../../Assets/images/BestTraveler1-profile.png"
 
 const BestTravelers = () => {
   return (
@@ -8,8 +9,8 @@ const BestTravelers = () => {
         <h4>Best Travelers Of This Month</h4>
     <div className='best-traveler-gallery'>
         <div className='best-traveler-card'>
-            <img src={BestTravelerLocation1} alt="" />
-
+            <img src={BestTravelerLocation1} alt="BestTraveler Location" className='best-traveler-location'/>
+            <img src={BestTraveler1Profile} alt="BestTraveler Profile" className='best-traveler-profile' />
         </div>
 
     </div>
