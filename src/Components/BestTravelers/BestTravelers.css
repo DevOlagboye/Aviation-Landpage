@@ -3,6 +3,14 @@
     text-align: center;
 }
 
+.best-traveler-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .best-traveler-card {
     height: 330px;
     width: 230px;
