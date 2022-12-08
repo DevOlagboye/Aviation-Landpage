@@ -3,6 +3,7 @@ import HeroPage from './Components/HeroPage/HeroPage';
 import Features from "./Components/Features/Features";
 import Cta from './Components/Cta/Cta';
 import BookFlight from './Components/BookFlight/BookFlight';
+import BestTravelers from './Components/BestTravelers/BestTravelers';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Features/>
       <Cta/>
       <BookFlight/>
+      <BestTravelers/>
     </div>
   );
 }
