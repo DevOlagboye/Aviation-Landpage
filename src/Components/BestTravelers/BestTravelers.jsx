@@ -11,6 +11,8 @@ const BestTravelers = () => {
         <div className='best-traveler-card'>
             <img src={BestTravelerLocation1} alt="BestTraveler Location" className='best-traveler-location'/>
             <img src={BestTraveler1Profile} alt="BestTraveler Profile" className='best-traveler-profile' />
+            <h5>Raju Mullah</h5>
+            <p>@rajumulllah</p>
         </div>
 
     </div>
