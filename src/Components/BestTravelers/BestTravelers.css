@@ -1,0 +1,12 @@
+.best-traveler-container {
+    padding: 50px;
+    text-align: center;
+}
+
+.best-traveler-card {
+    height: 330px;
+    width: 230px;
+    background: #FFF;
+    box-shadow: 2px 2px 20px 20px rgba(0, 0, 0, 0.03);
+    border-radius: 120px;
+}
