@@ -3,11 +3,17 @@
     text-align: center;
 }
 
+.best-traveler-container h4 {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 30px;
+}
+
 .best-traveler-gallery {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
@@ -30,8 +36,12 @@
 
 .best-traveler-card h5 {
     margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
 }
 
 .best-traveler-card p {
-    margin-top: 10px;
+    margin-top: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
 }
