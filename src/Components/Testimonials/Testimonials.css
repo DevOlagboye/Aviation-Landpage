@@ -6,6 +6,9 @@
 .testimonial-customers {
     display: flex;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .testimonial-container h5 {
@@ -32,7 +35,7 @@
     box-shadow: 2px 2px 20px 40px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
     width: 450px;
-    height: 250px;
+    height: 200px;
 }
 
 .mySwiper .swiper-button-prev,
@@ -43,16 +46,16 @@
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    top: 370px;
-    position: fixed;
+    top: 30px;
+    position: absolute;
 }
 
 .mySwiper .swiper-button-prev {
-    left: 70%;
+    left: 76%;
 }
 
 .mySwiper .swiper-button-next {
-    right: 20%;
+    right: 2%;
 }
 
 .mySwiper .swiper-button-next::after,
@@ -70,4 +73,35 @@
     color: #000;
     text-align: left;
     margin-left: 30px;
+}
+
+.customer-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.customer-name-rating h5 {
+    margin: 4px;
+    color: #000;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.testimonial-details h5 {
+    font-style: italic;
+}
+
+.testimonial-details h5::after {
+    content: "`";
+}
+
+.testimonial-details h5::before {
+    content: "`"
+}
+
+@media(max-width: 600px) {
+    .testimonial-customers .testimonial-main {
+        width: 400px;
+    }
 }

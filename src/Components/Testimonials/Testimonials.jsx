@@ -16,7 +16,7 @@ const Testimonials = () => {
         <h5>What's our customer saying</h5>
         <h3>Our Customer Feedback</h3>
         <div className='testimonial-customers'>
-            <img src={CustomersImage} alt="Customer's Images" />
+            <img src={CustomersImage} alt="Customer's Images"  className='testimonial-main'/>
             <Swiper spaceBetween={30}
             centeredSlides={true}
             autoplay={{
