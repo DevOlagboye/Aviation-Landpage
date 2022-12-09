@@ -1,3 +1,19 @@
 .testimonial-container {
     padding: 50px;
+    text-align: center;
+}
+
+.testimonial-container h5 {
+    color: #313EF7;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.testimonial-container h3 {
+    margin-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    color: #011736;
+    font-size: 40px;
 }
