@@ -4,6 +4,7 @@ import Features from "./Components/Features/Features";
 import Cta from './Components/Cta/Cta';
 import BookFlight from './Components/BookFlight/BookFlight';
 import BestTravelers from './Components/BestTravelers/BestTravelers';
+import Testimonials from './Components/Testimonials/Testimonials';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Cta/>
       <BookFlight/>
       <BestTravelers/>
+      <Testimonials/>
     </div>
   );
 }

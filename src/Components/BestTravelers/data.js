@@ -20,8 +20,8 @@ export const bestTravelers = [{
         location: BestTravelerLocation2
     },
     {
-        name: "Zaire Vetrovs",
-        username: "@zairevetrovs",
+        name: "Marcus Dias",
+        username: "@marcsdias",
         profileImage: BestTraveler3Profile,
         location: BestTravelerLocation3
     },
