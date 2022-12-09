@@ -46,8 +46,9 @@
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    top: 30px;
+    top: 40px;
     position: absolute;
+    box-shadow: 3px 3px 15px 10px rgba(70, 70, 232, 0.166);
 }
 
 .mySwiper .swiper-button-prev {
@@ -55,7 +56,7 @@
 }
 
 .mySwiper .swiper-button-next {
-    right: 2%;
+    right: 4%;
 }
 
 .mySwiper .swiper-button-next::after,

@@ -170,7 +170,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .hero-aviation-aircraft img {
         width: 450px;
     }
