@@ -1,5 +1,6 @@
 import React from 'react'
 import CustomersImage from "../../Assets/images/Customers.png"
+import "./Testimonials.css"
 
 const Testimonials = () => {
   return (
