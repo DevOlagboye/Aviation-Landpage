@@ -5,6 +5,7 @@
 
 .testimonial-customers {
     display: flex;
+    gap: 30px;
 }
 
 .testimonial-container h5 {
@@ -26,21 +27,15 @@
     display: none;
 }
 
-.mySwiper .swiper-button-prev {
-    background: #313EF7;
-    color: #FFF;
-    padding: 5px;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    top: 80%;
-    margin-left: 200px;
+.mySwiper {
+    background: #FFF;
+    box-shadow: 2px 2px 20px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    width: 400px;
+    height: 250px;
 }
 
-.mySwiper .swiper-button-prev::after {
-    font-size: 15px;
-}
-
+.mySwiper .swiper-button-prev,
 .mySwiper .swiper-button-next {
     background: #313EF7;
     color: #FFF;
@@ -48,10 +43,19 @@
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    top: 80%;
-    margin-right: 200px;
+    top: 370px;
+    position: fixed;
 }
 
-.mySwiper .swiper-button-next::after {
+.mySwiper .swiper-button-prev {
+    left: 70%;
+}
+
+.mySwiper .swiper-button-next {
+    right: 20%;
+}
+
+.mySwiper .swiper-button-next::after,
+.mySwiper .swiper-button-prev::after {
     font-size: 15px;
 }
