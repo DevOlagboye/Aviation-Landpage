@@ -31,7 +31,7 @@
     background: #FFF;
     box-shadow: 2px 2px 20px 40px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
-    width: 400px;
+    width: 450px;
     height: 250px;
 }
 
@@ -58,4 +58,16 @@
 .mySwiper .swiper-button-next::after,
 .mySwiper .swiper-button-prev::after {
     font-size: 15px;
+}
+
+.customer-details {
+    display: flex;
+    padding: 30px;
+}
+
+.testimonial-details h5 {
+    font-size: 14px;
+    color: #000;
+    text-align: left;
+    margin-left: 30px;
 }
