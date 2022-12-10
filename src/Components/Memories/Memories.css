@@ -12,4 +12,13 @@
 .memories-cards {
     display: flex;
     justify-content: center;
+    gap: 30px;
+}
+
+.memories-card:nth-child(2) {
+    margin-top: 50px;
+}
+
+.memories-card:last-child {
+    margin-top: 50px;
 }

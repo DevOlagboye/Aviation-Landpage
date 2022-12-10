@@ -10,16 +10,16 @@ const Memories = () => {
     <div className='memories-container'>
         <h4>Make Memories With Us</h4>
         <div className='memories-cards'>
-            <div className='memory-card'>
+            <div className='memories-card'>
                 <img src={Memories1} alt="" />
             </div>
-            <div className='memory-card'>
+            <div className='memories-card'>
                 <img src={Memories2} alt="" />
             </div>
-            <div className='memory-card'>
+            <div className='memories-card'>
                 <img src={Memories3} alt="" />
             </div>
-            <div className='memory-card'>
+            <div className='memories-card'>
                 <img src={Memories4} alt="" />
             </div>
         </div>
