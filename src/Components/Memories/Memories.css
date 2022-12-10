@@ -1,0 +1,15 @@
+.memories-container {
+    padding: 50px;
+    text-align: center;
+}
+
+.memories-container h4 {
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 40px;
+}
+
+.memories-cards {
+    display: flex;
+    justify-content: center;
+}
