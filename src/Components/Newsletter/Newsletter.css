@@ -10,3 +10,22 @@
     color: #011736;
     line-height: 50px;
 }
+
+.newsletter-container input {
+    padding: 15px 30px 15px 30px;
+    width: 350px;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+}
+
+.newsletter-container button {
+    position: absolute;
+    margin-top: 5px;
+    left: 312px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #313EF7;
+    color: #FFF;
+}
