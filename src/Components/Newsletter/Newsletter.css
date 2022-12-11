@@ -1,4 +1,12 @@
 .newsletter-container {
-    background: #313EF7;
-    opacity: 5%;
+    background: rgba(49, 62, 247, 0.05);
+    padding: 50px;
+}
+
+.newsletter-container h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #011736;
+    line-height: 50px;
 }
