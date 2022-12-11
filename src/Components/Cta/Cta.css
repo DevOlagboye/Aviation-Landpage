@@ -7,10 +7,6 @@
     flex-wrap: wrap;
 }
 
-.cta-image img {
-    width: 400px;
-}
-
 .cta-details h5 {
     color: #313EF7;
     font-family: "Montserrat", sans-serif;
@@ -51,4 +47,10 @@
     border: none;
     border-radius: 26px;
     box-shadow: 3px 3px 15px 10px rgba(70, 70, 232, 0.166);
+}
+
+@media(max-width: 600px) {
+    .cta-image img {
+        width: 400px;
+    }
 }
