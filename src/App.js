@@ -6,6 +6,7 @@ import BookFlight from './Components/BookFlight/BookFlight';
 import BestTravelers from './Components/BestTravelers/BestTravelers';
 import Testimonials from './Components/Testimonials/Testimonials';
 import Memories from './Components/Memories/Memories';
+import Newsletter from './Components/Newsletter/Newsletter';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <BestTravelers/>
       <Testimonials/>
       <Memories/>
+      <Newsletter/>
     </div>
   );
 }
