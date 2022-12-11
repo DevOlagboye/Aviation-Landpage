@@ -174,4 +174,7 @@
     .hero-aviation-aircraft img {
         width: 450px;
     }
+    .hero-menu ul {
+        display: none;
+    }
 }
