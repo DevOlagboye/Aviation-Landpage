@@ -7,6 +7,10 @@
     flex-wrap: wrap;
 }
 
+.cta-image img {
+    width: 400px;
+}
+
 .cta-details h5 {
     color: #313EF7;
     font-family: "Montserrat", sans-serif;
