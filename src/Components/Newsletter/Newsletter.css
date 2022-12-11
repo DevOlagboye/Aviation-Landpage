@@ -17,12 +17,14 @@
     border: none;
     border-radius: 20px;
     position: relative;
+    display: block;
+    margin: 20px auto 10px auto;
 }
 
 .newsletter-container button {
     position: absolute;
     margin-top: 5px;
-    left: 312px;
+    left: 800px;
     padding: 10px;
     border: none;
     border-radius: 20px;
