@@ -10,7 +10,7 @@ const Cta = () => {
             <img src={ctaImage} alt="Call to Action" />
         </div>
         <div className='cta-details'>
-            <h5>Let's Fly <img src={ctaLine} alt="CTA Line" /></h5> 
+            <h5>Let's Fly <img src={ctaLine} alt="CTA Line" className='cta-line' /></h5> 
             <h4>It’s one of the leading online flight <br/> booking platforms in the world</h4>
             <div className='cta-more-details'>
                 <div className='circle'></div>
