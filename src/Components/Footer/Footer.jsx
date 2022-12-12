@@ -9,7 +9,7 @@ const Footer = () => {
     <div className='footer-container'>
         <div className='footer-content-details'>
             <div className='footer-content'>
-                <img src={logo} alt="FT Planet Logo" />
+                <img src={logo} alt="FT Planet Logo" className='footer-logo' />
                 <p>There are many variations <br/> of passages of Lorem Ipsum available, <br/> but the majority have suffered <br/> alteration in some form</p>
                 <div className='footer-social-icons'>
                     <div className='footer-circle'>

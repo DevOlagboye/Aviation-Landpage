@@ -11,4 +11,13 @@
 
 .footer-content {
     color: #FFF;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-content .footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-container h4 {
+    margin-bottom: 20px;
 }
