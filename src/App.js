@@ -7,6 +7,7 @@ import BestTravelers from './Components/BestTravelers/BestTravelers';
 import Testimonials from './Components/Testimonials/Testimonials';
 import Memories from './Components/Memories/Memories';
 import Newsletter from './Components/Newsletter/Newsletter';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Testimonials/>
       <Memories/>
       <Newsletter/>
+      <Footer/>
     </div>
   );
 }
