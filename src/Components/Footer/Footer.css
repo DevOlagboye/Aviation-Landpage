@@ -6,7 +6,8 @@
 
 .footer-content-details {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 170px;
 }
 
 .footer-content {
@@ -20,4 +21,13 @@
 
 .footer-container h4 {
     margin-bottom: 20px;
+}
+
+.footer-container ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-content-details .footer-divider {
+    margin: auto;
 }
