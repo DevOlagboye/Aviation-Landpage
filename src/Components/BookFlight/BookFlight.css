@@ -28,4 +28,7 @@
     .book-flight-ticket img {
         display: none;
     }
+    .book-flight-text-image h4 {
+        font-size: 30px;
+    }
 }
