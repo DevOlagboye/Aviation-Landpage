@@ -105,4 +105,10 @@
     .testimonial-customers .testimonial-main {
         width: 400px;
     }
+    .mySwiper .swiper-button-prev {
+        left: 74%;
+    }
+    .mySwiper .swiper-button-next {
+        right: 4%;
+    }
 }
