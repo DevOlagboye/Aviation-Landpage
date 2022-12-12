@@ -23,3 +23,9 @@
     color: #FFF;
     font-family: "Montserrat", sans-serif;
 }
+
+@media (max-width: 600px) {
+    .book-flight-ticket img {
+        display: none;
+    }
+}
