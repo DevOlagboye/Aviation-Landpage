@@ -1,3 +1,5 @@
 .footer-container {
     background: url("../../Assets/images/Footer-background.png");
+    height: 350px;
+    padding: 50px;
 }
