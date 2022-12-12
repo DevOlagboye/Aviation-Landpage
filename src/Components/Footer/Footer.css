@@ -4,4 +4,11 @@
     padding: 50px;
 }
 
-.footer-content-details {}
+.footer-content-details {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-content {
+    color: #FFF;
+}
