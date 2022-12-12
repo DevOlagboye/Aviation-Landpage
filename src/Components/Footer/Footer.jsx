@@ -13,13 +13,13 @@ const Footer = () => {
                 <p>There are many variations <br/> of passages of Lorem Ipsum available, <br/> but the majority have suffered <br/> alteration in some form</p>
                 <div className='footer-social-icons'>
                     <div className='footer-circle'>
-                        <FaFacebookF/>
+                        <FaFacebookF className='icon'/>
                     </div>
                     <div className='footer-circle'>
-                        <FaLinkedinIn/>
+                        <FaLinkedinIn className='icon'/>
                     </div>
                     <div className='footer-circle'>
-                        <FaTwitter/>
+                        <FaTwitter className='icon'/>
                     </div>
                 </div>
             </div>

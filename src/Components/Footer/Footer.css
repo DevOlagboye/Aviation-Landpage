@@ -1,6 +1,5 @@
 .footer-container {
     background: url("../../Assets/images/Footer-background.png");
-    height: 350px;
     padding: 50px;
 }
 
@@ -8,6 +7,7 @@
     display: flex;
     justify-content: center;
     gap: 170px;
+    flex-wrap: wrap;
 }
 
 .footer-content {
@@ -23,9 +23,36 @@
     margin-bottom: 20px;
 }
 
+.footer-social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-circle {
+    width: 30px;
+    height: 30px;
+    background: #FFF;
+    color: #17181C;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.footer-circle:hover {
+    cursor: pointer;
+}
+
+.footer-circle .icon {
+    display: block;
+    margin: 7px auto;
+}
+
 .footer-container ul li {
     list-style: none;
     margin-bottom: 10px;
+}
+
+.footer-container ul li:hover {
+    cursor: pointer;
 }
 
 .footer-container .footer-divider {
