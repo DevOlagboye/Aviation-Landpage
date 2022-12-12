@@ -57,7 +57,7 @@ const Footer = () => {
 
         </div>
         <img src={FooterDivider} alt="Footer-Divider"  className='footer-divider'/>
-        <p>Copyright ©
+        <p className='footer-copyright'>Copyright ©
 FT PLANE {new Date().getFullYear()} All right reserved</p>
     </div>
   )

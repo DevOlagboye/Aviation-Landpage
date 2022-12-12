@@ -28,6 +28,13 @@
     margin-bottom: 10px;
 }
 
-.footer-content-details .footer-divider {
-    margin: auto;
+.footer-container .footer-divider {
+    display: block;
+    margin: 20px auto;
+}
+
+.footer-container .footer-copyright {
+    color: #FFF;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
 }
