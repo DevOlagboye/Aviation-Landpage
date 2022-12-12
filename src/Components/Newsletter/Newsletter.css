@@ -11,20 +11,19 @@
     line-height: 50px;
 }
 
+.newsletter-container form {
+    display: flex;
+    justify-content: center;
+}
+
 .newsletter-container input {
     padding: 15px 30px 15px 30px;
     width: 350px;
     border: none;
     border-radius: 20px;
-    position: relative;
-    display: block;
-    margin: 20px auto 10px auto;
 }
 
 .newsletter-container button {
-    position: absolute;
-    margin-top: 5px;
-    left: 800px;
     padding: 10px;
     border: none;
     border-radius: 20px;
