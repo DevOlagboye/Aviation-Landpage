@@ -19,9 +19,10 @@
 
 .newsletter-container input {
     padding: 15px 30px 15px 30px;
-    width: 350px;
+    width: 400px;
     border: none;
     border-radius: 20px;
+    position: relative;
 }
 
 .newsletter-container button {
@@ -30,4 +31,7 @@
     border-radius: 20px;
     background: #313EF7;
     color: #FFF;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 5px;
 }
