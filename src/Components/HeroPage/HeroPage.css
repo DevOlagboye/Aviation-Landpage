@@ -107,6 +107,10 @@
     border: none;
 }
 
+.booking-features-details .date-picker:hover {
+    cursor: pointer;
+}
+
 .booking-features-details .date-picker::placeholder {
     color: #000;
 }
