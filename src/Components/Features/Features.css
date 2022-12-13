@@ -71,3 +71,12 @@
 .feature-card p {
     margin-top: 10px;
 }
+
+@media (max-width: 600px) {
+    .features-container {
+        margin-top: 50px;
+    }
+    .feature-card {
+        margin-top: 20px;
+    }
+}
