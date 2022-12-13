@@ -1,4 +1,6 @@
-import React from 'react'
+import React, {useState, useMemo} from 'react'
+import Select from "react-select"
+import countryList from "react-select-country-list"
 import { DatePicker } from 'antd'
 import "./HeroPage.css"
 import mainAircraft from "../../Assets/images/MainAircraft.png"
@@ -7,8 +9,14 @@ import bookingLocation from "../../Assets/images/booking-location.png"
 import travelersIcon from "../../Assets/images/travelers-icon.png"
 import checkInIcon from "../../Assets/images/check-in-icon.png"
 const HeroPage = () => {
-    const onChange = (date, dateString) =>{
+    const changeDate = (date, dateString) =>{
         console.log(date, dateString);
+    }
+    const [value, setValue] = useState('')
+    const options = useMemo(() => countryList().getData(), [])
+
+    const changeHandler = value => {
+        setValue(value)
     }
   return (
     <div className='hero-container'>
@@ -47,7 +55,7 @@ const HeroPage = () => {
                     <div className='booking-features-details'>
                         <img src={bookingLocation} alt="booking location" />
                         <h5>Location<br/>
-                            <span>Where are you going?</span>
+                            <Select options={options} value={value} onChange={changeHandler} className="country-picker"/>
                         </h5>
                     </div>
                     <div className='booking-features-details'>
@@ -59,13 +67,13 @@ const HeroPage = () => {
                     <div className='booking-features-details'>
                         <img src={checkInIcon} alt="Check In Icon" />
                         <h5>Check-in<br/>
-                            <DatePicker onChange={onChange} className="date-picker" placeholder={"Add Date"}/>
+                            <DatePicker onChange={changeDate} className="date-picker" placeholder={"Add Date"}/>
                         </h5>
                     </div>
                     <div className='booking-features-details'>
                         <img src={checkInIcon} alt="Check In Icon" />
                         <h5>Check-out<br/>
-                            <DatePicker onChange={onChange} className="date-picker" placeholder={"Add Date"}/>
+                            <DatePicker onChange={changeDate} className="date-picker" placeholder={"Add Date"}/>
                         </h5>
                     </div>
                 </div>
