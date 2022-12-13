@@ -60,4 +60,10 @@
     .cta-details .cta-line {
         width: 420px;
     }
+    .cta-details h4 {
+        font-size: 23px;
+    }
+    .cta-details p {
+        font-size: 15px;
+    }
 }
