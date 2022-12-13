@@ -7,6 +7,10 @@
     flex-wrap: wrap;
 }
 
+.cta-details {
+    margin-left: 20px;
+}
+
 .cta-details h5 {
     color: #313EF7;
     font-family: "Montserrat", sans-serif;
@@ -52,5 +56,8 @@
 @media(max-width: 600px) {
     .cta-image img {
         width: 400px;
+    }
+    .cta-details .cta-line {
+        width: 420px;
     }
 }
