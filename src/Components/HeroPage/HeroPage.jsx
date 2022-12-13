@@ -1,4 +1,5 @@
 import React from 'react'
+import { DatePicker } from 'antd'
 import "./HeroPage.css"
 import mainAircraft from "../../Assets/images/MainAircraft.png"
 import aircraftLogo from "../../Assets/images/logo.png"
@@ -6,6 +7,9 @@ import bookingLocation from "../../Assets/images/booking-location.png"
 import travelersIcon from "../../Assets/images/travelers-icon.png"
 import checkInIcon from "../../Assets/images/check-in-icon.png"
 const HeroPage = () => {
+    const onChange = (date, dateString) =>{
+        console.log(date, dateString);
+    }
   return (
     <div className='hero-container'>
         <div className='hero-menu'>
@@ -55,7 +59,7 @@ const HeroPage = () => {
                     <div className='booking-features-details'>
                         <img src={checkInIcon} alt="Check In Icon" />
                         <h5>Check-in<br/>
-                            <span>Add date</span>
+                            <DatePicker onChange={onChange} className="date-picker"/>
                         </h5>
                     </div>
                     <div className='booking-features-details'>

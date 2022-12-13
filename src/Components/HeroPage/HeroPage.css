@@ -97,6 +97,17 @@
     top: -50px;
 }
 
+.booking-features-details img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.booking-features-details .date-picker {
+    border: none;
+    color: #000;
+}
+
 .booking-category-list {
     display: flex;
     justify-content: flex-start;
