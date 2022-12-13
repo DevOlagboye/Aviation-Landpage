@@ -105,6 +105,9 @@
 
 .booking-features-details .date-picker {
     border: none;
+}
+
+.booking-features-details .date-picker::placeholder {
     color: #000;
 }
 

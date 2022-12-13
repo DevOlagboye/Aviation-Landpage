@@ -59,13 +59,13 @@ const HeroPage = () => {
                     <div className='booking-features-details'>
                         <img src={checkInIcon} alt="Check In Icon" />
                         <h5>Check-in<br/>
-                            <DatePicker onChange={onChange} className="date-picker"/>
+                            <DatePicker onChange={onChange} className="date-picker" placeholder={"Add Date"}/>
                         </h5>
                     </div>
                     <div className='booking-features-details'>
                         <img src={checkInIcon} alt="Check In Icon" />
                         <h5>Check-out<br/>
-                            <span>Add date</span>
+                            <DatePicker onChange={onChange} className="date-picker" placeholder={"Add Date"}/>
                         </h5>
                     </div>
                 </div>
