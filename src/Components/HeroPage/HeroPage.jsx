@@ -55,7 +55,13 @@ const HeroPage = () => {
                     <div className='booking-features-details'>
                         <img src={bookingLocation} alt="booking location" />
                         <h5>Location<br/>
-                            <Select options={options} value={value} onChange={changeHandler} className="country-picker"/>
+                            <Select placeholder={"Where are you going"} options={options} value={value} onChange={changeHandler} styles={{
+                                control: (baseStyles, state) =>({
+                                    ...baseStyles,
+                                    border: "none",
+                                    width: "250px",
+                                }),
+                            }}/>
                         </h5>
                     </div>
                     <div className='booking-features-details'>

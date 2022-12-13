@@ -107,14 +107,6 @@
     border: none;
 }
 
-.booking-features-details .country-picker {
-    width: 200px;
-}
-
-.booking-features-details .country-picker:hover {
-    cursor: pointer;
-}
-
 .booking-features-details .date-picker:hover {
     cursor: pointer;
 }
@@ -214,7 +206,7 @@
     }
     .booking-features {
         flex-direction: column;
-        padding: 80px 10px 0px 10px;
+        padding: 80px 0px 0px 30px;
     }
     .booking-category-list {
         flex-direction: column;
