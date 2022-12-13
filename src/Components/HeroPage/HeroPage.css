@@ -177,6 +177,9 @@
     .hero-menu ul {
         display: none;
     }
+    .hero-menu button {
+        display: none;
+    }
     .booking-container {
         width: 400px;
         margin: 80px auto 20px auto;
