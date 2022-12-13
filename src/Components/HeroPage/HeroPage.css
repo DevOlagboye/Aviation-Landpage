@@ -214,6 +214,7 @@
     }
     .booking-features {
         flex-direction: column;
+        padding: 80px 10px 0px 10px;
     }
     .booking-category-list {
         flex-direction: column;
