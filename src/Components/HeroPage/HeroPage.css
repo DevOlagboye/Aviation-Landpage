@@ -190,7 +190,7 @@
 
 @media (max-width: 600px) {
     .hero-aviation-aircraft img {
-        width: 450px;
+        width: 350px;
     }
     .hero-menu ul {
         display: none;
@@ -216,5 +216,11 @@
     }
     .booking-features-details {
         margin-top: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-page-text h4 {
+        font-size: 20px;
     }
 }
