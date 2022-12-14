@@ -53,17 +53,23 @@
     box-shadow: 3px 3px 15px 10px rgba(70, 70, 232, 0.166);
 }
 
+@media(max-width: 400px) {
+    .cta-details {
+        margin-left: 50px;
+    }
+}
+
 @media(max-width: 600px) {
     .cta-image img {
-        width: 400px;
+        width: 350px;
     }
     .cta-details .cta-line {
         width: 420px;
     }
     .cta-details h4 {
-        font-size: 23px;
+        font-size: 20px;
     }
     .cta-details p {
-        font-size: 15px;
+        font-size: 13px;
     }
 }
