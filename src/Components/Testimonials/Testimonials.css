@@ -111,4 +111,18 @@
     .mySwiper .swiper-button-next {
         right: 4%;
     }
+    .mySwiper {
+        height: 210px;
+    }
+    .mySwiper .customer-name-rating h5 {
+        font-size: 15px;
+    }
+    .mySwiper .swiper-button-prev,
+    .mySwiper .swiper-button-next {
+        width: 30px;
+        height: 30px;
+    }
+    .testimonial-details h5 {
+        font-size: 12px;
+    }
 }

@@ -38,7 +38,7 @@ const Testimonials = () => {
                     </div>
                     <div className='customer-name-rating'>
                         <h5>{Testimonial.name}</h5>
-                        <Rate defaultValue={Testimonial.rating}/>
+                        <Rate defaultValue={Testimonial.rating} className="rating"/>
                     </div>
                     </div>
                     <div className='testimonial-details'>
