@@ -72,4 +72,7 @@
     .cta-details p {
         font-size: 13px;
     }
+    .cta-more-details {
+        width: 350px;
+    }
 }
