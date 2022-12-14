@@ -103,7 +103,7 @@
 
 @media(max-width: 600px) {
     .testimonial-customers .testimonial-main {
-        width: 400px;
+        width: 350px;
     }
     .mySwiper .swiper-button-prev {
         left: 74%;
@@ -124,5 +124,9 @@
     }
     .testimonial-details h5 {
         font-size: 12px;
+    }
+    .customer-profile img {
+        width: 40px;
+        height: 40px;
     }
 }
