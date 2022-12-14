@@ -23,3 +23,9 @@
 .memories-card:last-child {
     margin-top: 50px;
 }
+
+@media (max-width: 600px) {
+    .memories-container h4 {
+        font-size: 30px;
+    }
+}
