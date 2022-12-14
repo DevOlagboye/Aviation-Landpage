@@ -31,4 +31,7 @@
     .book-flight-text-image h4 {
         font-size: 30px;
     }
+    .book-flight-text-image .air-delivery-image {
+        width: 300px;
+    }
 }

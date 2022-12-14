@@ -10,7 +10,7 @@ const BookFlight = () => {
             <div className='book-flight-text-image'>
                 <h4>Book Popular Flight <br/> Tickets</h4>
                 <p>Lorem Ipsum is simply dummy text of the printing and <br/>typesetting industry. Lorem Ipsum has been the industry's</p>
-                <img src={AirDeliveryImage} alt="Air Craft Delivery" />
+                <img src={AirDeliveryImage} alt="Air Craft Delivery" className='air-delivery-image' />
             </div>
             <div className='book-flight-ticket'>
                 <img src={TicketImage} alt="Book Flight Ticket" />
