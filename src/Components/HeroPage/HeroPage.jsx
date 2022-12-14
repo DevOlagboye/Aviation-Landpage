@@ -1,4 +1,4 @@
-import React, {useState, useMemo} from 'react'
+import React, {useState, useMemo, useRef, useEffect} from 'react'
 import Select from "react-select"
 import countryList from "react-select-country-list"
 import { DatePicker } from 'antd'
@@ -8,7 +8,8 @@ import aircraftLogo from "../../Assets/images/logo.png"
 import bookingLocation from "../../Assets/images/booking-location.png"
 import travelersIcon from "../../Assets/images/travelers-icon.png"
 import checkInIcon from "../../Assets/images/check-in-icon.png"
-const HeroPage = () => {
+import gsap from "gsap"
+const HeroPage = ({timeline, ease}) => {
     const changeDate = (date, dateString) =>{
         console.log(date, dateString);
     }
@@ -18,20 +19,43 @@ const HeroPage = () => {
     const changeHandler = value => {
         setValue(value)
     }
+    let logo = useRef(null);
+    let menu_item1 = useRef(null);
+    let menu_item2 = useRef(null);
+    let menu_item3 = useRef(null);
+    let menu_item4 = useRef(null);
+    
+    useEffect(() => {
+        gsap.to('.hero-image', {y: 25, duration: 3});
+        timeline.to(logo, 1, {
+            opacity: 1,
+            y: '10'
+        });
+
+        timeline.to([menu_item1, menu_item2, menu_item3, menu_item4], 2 ,{
+            opacity: 1,
+            y: 9,
+            stagger: {
+                amount: .4
+            },
+            ease: ease
+        })
+    })
+    
   return (
     <div className='hero-container'>
         <div className='hero-menu'>
-            <img src={aircraftLogo} alt=""  />
+            <img src={aircraftLogo} alt=""  ref={el => logo = el} className="logo"/>
             <ul>
-                <li className='active'>All Flight</li>
-                <li>Schedule</li>
-                <li>Passengers</li>
-                <li>Your Orders</li>
+                <li ref={el => menu_item1 = el} className='menu-item active'>All Flight</li>
+                <li ref={el => menu_item2 = el} className="menu-item">Schedule</li>
+                <li ref={el => menu_item3 = el} className="menu-item">Passengers</li>
+                <li ref={el => menu_item4 = el} className="menu-item">Your Orders</li>
             </ul>
             <button>Let's Fly</button>
         </div>
         <div className='hero-aviation-aircraft'>
-            <img src={mainAircraft} alt=""  />
+            <img src={mainAircraft} alt="" className='hero-image' />
         </div>
         <div className='hero-page-text'>
             <h4>Travel Around The World</h4>
