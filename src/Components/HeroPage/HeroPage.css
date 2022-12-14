@@ -217,6 +217,9 @@
     .booking-features-details {
         margin-top: 10px;
     }
+    .hero-page-text p {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 400px) {
