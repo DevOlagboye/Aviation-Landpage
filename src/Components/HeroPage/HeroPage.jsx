@@ -26,7 +26,7 @@ const HeroPage = ({timeline, ease}) => {
     let menu_item4 = useRef(null);
     
     useEffect(() => {
-        gsap.to('.hero-image', {y: 25, duration: 3});
+            gsap.to('.hero-image', {y: 25, duration: 3});
         timeline.to(logo, 1, {
             opacity: 1,
             y: '10'
