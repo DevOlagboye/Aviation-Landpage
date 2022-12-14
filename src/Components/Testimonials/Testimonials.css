@@ -11,7 +11,7 @@
     flex-wrap: wrap;
 }
 
-.testimonial-container h5 {
+.testimonial-container .testimonial-first-text {
     color: #313EF7;
     margin-bottom: 20px;
     font-family: "Montserrat", sans-serif;
@@ -69,11 +69,14 @@
     padding: 30px;
 }
 
-.testimonial-details h5 {
+.testimonial-details .testimonial-details-text {
     font-size: 14px;
     color: #000;
     text-align: left;
+    font-family: "Montserrat", sans-serif;
     margin-left: 30px;
+    font-style: italic;
+    font-weight: 300;
 }
 
 .customer-profile img {
@@ -82,22 +85,19 @@
     border-radius: 50%;
 }
 
-.customer-name-rating h5 {
+.customer-name-rating .customer-name {
     margin: 4px;
     color: #000;
     font-size: 21px;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
 }
 
-.testimonial-details h5 {
-    font-style: italic;
-}
-
-.testimonial-details h5::after {
+.testimonial-details .testimonial-details-text::after {
     content: "`";
 }
 
-.testimonial-details h5::before {
+.testimonial-details .testimonial-details-text::before {
     content: "`"
 }
 
@@ -114,7 +114,7 @@
     .mySwiper {
         height: 210px;
     }
-    .mySwiper .customer-name-rating h5 {
+    .customer-name-rating .customer-name {
         font-size: 15px;
     }
     .mySwiper .swiper-button-prev,
@@ -122,11 +122,18 @@
         width: 30px;
         height: 30px;
     }
-    .testimonial-details h5 {
+    .testimonial-details .testimonial-details-text {
         font-size: 12px;
+        margin-left: 12px;
     }
     .customer-profile img {
         width: 40px;
         height: 40px;
+    }
+    .testimonial-container h3 {
+        font-size: 25px;
+    }
+    .testimonial-container .testimonial-first-text {
+        font-size: 15px;
     }
 }

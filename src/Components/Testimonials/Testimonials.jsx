@@ -13,7 +13,7 @@ import {Autoplay, Pagination, Navigation} from "swiper"
 const Testimonials = () => {
   return (
     <div className='testimonial-container'>
-        <h5>What's our customer saying</h5>
+        <h5 className='testimonial-first-text'>What's our customer saying</h5>
         <h3>Our Customer Feedback</h3>
         <div className='testimonial-customers'>
             <img src={CustomersImage} alt="Customer's Images"  className='testimonial-main'/>
@@ -37,12 +37,12 @@ const Testimonials = () => {
                         <img src={Testimonial.CustomerProfile} alt="" />
                     </div>
                     <div className='customer-name-rating'>
-                        <h5>{Testimonial.name}</h5>
+                        <h5 className='customer-name'>{Testimonial.name}</h5>
                         <Rate defaultValue={Testimonial.rating} className="rating"/>
                     </div>
                     </div>
                     <div className='testimonial-details'>
-                        <h5>{Testimonial.testimonials}</h5>
+                        <h5 className='testimonial-details-text'>{Testimonial.testimonials}</h5>
                     </div>
                     
                 </SwiperSlide>
