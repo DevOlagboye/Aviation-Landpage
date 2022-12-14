@@ -55,7 +55,7 @@
 
 @media(max-width: 400px) {
     .cta-details {
-        margin-left: 50px;
+        margin-left: 10px;
     }
 }
 
@@ -64,7 +64,7 @@
         width: 350px;
     }
     .cta-details .cta-line {
-        width: 420px;
+        width: 320px;
     }
     .cta-details h4 {
         font-size: 20px;
