@@ -198,8 +198,11 @@
     .hero-menu button {
         display: none;
     }
+    .booking-category {
+        width: 360px;
+    }
     .booking-container {
-        width: 400px;
+        width: 360px;
         margin: 80px auto 20px auto;
         height: 450px;
         border-top-right-radius: 0px;
