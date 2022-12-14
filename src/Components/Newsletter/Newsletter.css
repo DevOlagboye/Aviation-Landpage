@@ -33,7 +33,7 @@
     color: #FFF;
     position: absolute;
     margin-left: 305px;
-    margin-top: 6px;
+    margin-top: 5px;
 }
 
 @media (max-width: 600px) {
@@ -41,6 +41,6 @@
         font-size: 23px;
     }
     .newsletter-container button {
-        margin-left: 250px;
+        margin-left: 210px;
     }
 }
