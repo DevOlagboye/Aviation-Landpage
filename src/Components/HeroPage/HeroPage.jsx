@@ -19,7 +19,6 @@ const HeroPage = ({timeline, ease}) => {
     const changeHandler = value => {
         setValue(value)
     }
-    let logo = useRef(null);
     let menu_item1 = useRef(null);
     let menu_item2 = useRef(null);
     let menu_item3 = useRef(null);
@@ -27,11 +26,6 @@ const HeroPage = ({timeline, ease}) => {
     
     useEffect(() => {
             gsap.to('.hero-image', {y: 25, duration: 3});
-        timeline.to(logo, 1, {
-            opacity: 1,
-            y: '10'
-        });
-
         timeline.to([menu_item1, menu_item2, menu_item3, menu_item4], 2 ,{
             opacity: 1,
             y: 9,
@@ -45,7 +39,7 @@ const HeroPage = ({timeline, ease}) => {
   return (
     <div className='hero-container'>
         <div className='hero-menu'>
-            <img src={aircraftLogo} alt=""  ref={el => logo = el} className="logo"/>
+            <img src={aircraftLogo} alt=""/>
             <ul>
                 <li ref={el => menu_item1 = el} className='menu-item active'>All Flight</li>
                 <li ref={el => menu_item2 = el} className="menu-item">Schedule</li>
