@@ -21,9 +21,19 @@ const HeroPage = () => {
     }
 
     let logoItem = useRef(null)
+    let bookButton = useRef(null)
     let heroPageText = useRef(null)
     let heroPageTextP = useRef(null)
 
+    const [expand, setExpand] = useState(false)
+    const handleExpand = () =>{
+        gsap.to(bookButton, {y: 10, duration: .8, ease:Power3.easeOut  })
+        setExpand(true)
+    }
+    const handleShrink = () =>{
+        gsap.to(bookButton, {y: 0, duration: .8, ease:Power3.easeIn  })
+        setExpand(false)
+    }
     useEffect(() => {
             gsap.to('.hero-image', {y: 25, duration: 5, opacity: 1});
             gsap.to([logoItem, heroPageText, heroPageTextP],
@@ -104,7 +114,7 @@ const HeroPage = () => {
                     </div>
                 </div>
                 <form>
-                    <button type='submit' className='book-button'>
+                    <button onMouseLeave={handleShrink} onMouseEnter={handleExpand} ref={el => {bookButton = el}} type='submit' className='book-button'>
                         Book Now
                     </button>
                 </form>
