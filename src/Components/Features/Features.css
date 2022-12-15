@@ -28,6 +28,10 @@
     padding: 10px;
 }
 
+.feature-card:hover {
+    cursor: pointer;
+}
+
 .feature-card h5 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
