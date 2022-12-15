@@ -15,6 +15,7 @@
 .hero-menu img {
     width: 150px;
     margin-right: 37%;
+    opacity: 0;
 }
 
 .hero-menu ul {
@@ -58,6 +59,7 @@
 
 .hero-aviation-aircraft img {
     margin-top: 70px;
+    opacity: 0;
 }
 
 .hero-page-text {
@@ -69,11 +71,13 @@
     color: #FFF;
     font-size: 40px;
     margin-bottom: 30px;
+    opacity: 0;
 }
 
 .hero-page-text p {
     color: #FFF;
     font-size: 14px;
+    opacity: 0;
 }
 
 .booking-container {

@@ -8,7 +8,7 @@ import aircraftLogo from "../../Assets/images/logo.png"
 import bookingLocation from "../../Assets/images/booking-location.png"
 import travelersIcon from "../../Assets/images/travelers-icon.png"
 import checkInIcon from "../../Assets/images/check-in-icon.png"
-import gsap from "gsap"
+import gsap, {Power3} from "gsap"
 const HeroPage = () => {
     const changeDate = (date, dateString) =>{
         console.log(date, dateString);
@@ -19,15 +19,29 @@ const HeroPage = () => {
     const changeHandler = value => {
         setValue(value)
     }
+
+    let logoItem = useRef(null)
+    let heroPageText = useRef(null)
+    let heroPageTextP = useRef(null)
+
     useEffect(() => {
-            gsap.to('.hero-image', {y: 25, duration: 3});
+            gsap.to('.hero-image', {y: 25, duration: 5, opacity: 1});
+            gsap.to([logoItem, heroPageText, heroPageTextP],
+                {
+                    duration: 3,
+                    y: -5,
+                    opacity: 1,
+                    ease: Power3.easeIn,
+                    delay: .2
+                }
+            )
         
-    })
+    }, [])
     
   return (
     <div className='hero-container'>
         <div className='hero-menu'>
-            <img src={aircraftLogo} alt=""/>
+            <img src={aircraftLogo} alt="" ref={el => {logoItem = el}}/>
             <ul>
                 <li className='active'>All Flight</li>
                 <li>Schedule</li>
@@ -40,8 +54,8 @@ const HeroPage = () => {
             <img src={mainAircraft} alt="" className='hero-image' />
         </div>
         <div className='hero-page-text'>
-            <h4>Travel Around The World</h4>
-            <p>Aviation Travel around the world One of the advantages of being disorganized is that one is always having surprising discoveries</p>
+            <h4 ref={el =>{heroPageText = el} }>Travel Around The World</h4>
+            <p ref={el =>{heroPageTextP = el} }>Aviation Travel around the world One of the advantages of being disorganized is that one is always having surprising discoveries</p>
         </div>
         <div className='booking-container'>
             <div className='booking-category'>
