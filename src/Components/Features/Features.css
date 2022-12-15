@@ -26,6 +26,7 @@
     border-radius: 120px;
     text-align: center;
     padding: 10px;
+    opacity: 0;
 }
 
 .feature-card:hover {
