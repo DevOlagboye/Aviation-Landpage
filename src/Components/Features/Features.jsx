@@ -6,7 +6,7 @@ import privateIcon from "../../Assets/images/Private-icon.png"
 import onlineSupportIcon from "../../Assets/images/online-support-icon.png"
 import { FaArrowRight } from "react-icons/fa";
 import gsap, {Power3} from "gsap"
-const Booking = () => {
+const Booking = ({el}) => {
   let featureCard1 = useRef(null)
   let featureCard2 = useRef(null)
   let featureCard3 = useRef(null)
@@ -24,7 +24,7 @@ const Booking = () => {
   })
 
   return (
-    <div className='features-container'>
+    <div className='features-container fadeIn' ref={el}>
         <h4 className='our-feature-main-text'>Our Features</h4>
         <div className='features-cards'>
           <div className='feature-card' ref={el => {featureCard1 = el}}

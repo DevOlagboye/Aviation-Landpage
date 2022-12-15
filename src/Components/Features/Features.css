@@ -1,6 +1,7 @@
 .features-container {
     margin-top: 200px;
     padding: 50px;
+    opacity: 0;
 }
 
 .our-feature-main-text {
