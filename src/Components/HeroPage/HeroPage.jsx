@@ -36,10 +36,13 @@ const HeroPage = () => {
     }
     useEffect(() => {
             gsap.to('.hero-image', {y: 25, duration: 5, opacity: 1});
-            gsap.to([logoItem, heroPageText, heroPageTextP],
+            gsap.fromTo([logoItem, heroPageText, heroPageTextP],{
+                opacity: 0,
+                y: 20
+            },
                 {
                     duration: 3,
-                    y: -5,
+                    y: 0,
                     opacity: 1,
                     ease: Power3.easeIn,
                     delay: .2

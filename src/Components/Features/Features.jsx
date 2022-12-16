@@ -5,25 +5,28 @@ import discountIcon from "../../Assets/images/discount.png"
 import privateIcon from "../../Assets/images/Private-icon.png"
 import onlineSupportIcon from "../../Assets/images/online-support-icon.png"
 import { FaArrowRight } from "react-icons/fa";
-import gsap, {Power3} from "gsap"
+import {gsap, Power3} from "gsap"
+
 const Booking = () => {
   let featuredContainer = useRef(null)
 
   useEffect(() =>{
     gsap.to(featuredContainer,{
         duration: 3,
-        y: -5,
+        y: -10,
         opacity: 1,
         ease: Power3.easeIn,
         delay: 2,
         scrollTrigger: {
           trigger: featuredContainer,
           markers: true,
-          start: "top center"
+          start: "top top",
+          end: "bottom center",
+          scrub: true,
         }
     
-    })
-  })
+    });
+  }, [])
 
   return (
     <div className='features-container' ref={el => {featuredContainer = el}}>
