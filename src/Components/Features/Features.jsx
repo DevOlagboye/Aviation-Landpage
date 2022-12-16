@@ -24,7 +24,7 @@ const Booking = () => {
           trigger: featuredContainer,
           markers: true,
           start: "-190%",
-          end: "10%",
+          end: "5%",
           scrub: true,
         }
     
