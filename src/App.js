@@ -1,6 +1,5 @@
 import './App.css';
-import React, {useEffect, useRef} from 'react';
-import {useIntersection} from "react-use"
+import React, {useEffect} from 'react';
 import HeroPage from './Components/HeroPage/HeroPage';
 import Features from "./Components/Features/Features";
 import Cta from './Components/Cta/Cta';
