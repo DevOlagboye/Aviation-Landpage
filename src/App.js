@@ -50,7 +50,7 @@ function App() {
   })
   return (
     <div className='App' ref={el => {App = el}}>
-      <HeroPage el={sectionRef}/>
+      <HeroPage/>
       <Features/>
       <Cta/>
       <BookFlight/>
