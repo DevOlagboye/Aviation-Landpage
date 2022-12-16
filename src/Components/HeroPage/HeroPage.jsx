@@ -9,7 +9,10 @@ import bookingLocation from "../../Assets/images/booking-location.png"
 import travelersIcon from "../../Assets/images/travelers-icon.png"
 import checkInIcon from "../../Assets/images/check-in-icon.png"
 import gsap, {Power3} from "gsap"
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 const HeroPage = () => {
+    gsap.registerPlugin(ScrollTrigger);
+
     const changeDate = (date, dateString) =>{
         console.log(date, dateString);
     }
@@ -45,7 +48,7 @@ const HeroPage = () => {
                     y: 0,
                     opacity: 1,
                     ease: Power3.easeIn,
-                    delay: .2
+                    delay: .2,
                 }
             )
         
