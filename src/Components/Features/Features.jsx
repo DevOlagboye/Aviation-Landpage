@@ -15,11 +15,11 @@ const Booking = () => {
   useEffect(() =>{
     gsap.to(featuredContainer,
       {
-        duration: 3,
-        y: -10,
+        duration: 5,
+        y: -20,
         opacity: 1,
-        ease: Power3.easeInOut,
-        delay: 2,
+        ease: Power3.easeIn,
+        delay: 3,
         scrollTrigger: {
           trigger: featuredContainer,
           markers: false,
