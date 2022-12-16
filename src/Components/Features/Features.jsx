@@ -6,49 +6,51 @@ import privateIcon from "../../Assets/images/Private-icon.png"
 import onlineSupportIcon from "../../Assets/images/online-support-icon.png"
 import { FaArrowRight } from "react-icons/fa";
 import gsap, {Power3} from "gsap"
-const Booking = ({el}) => {
-  let featureCard1 = useRef(null)
-  let featureCard2 = useRef(null)
-  let featureCard3 = useRef(null)
-  let featureCard4 = useRef(null)
+const Booking = () => {
+  let featuredContainer = useRef(null)
 
   useEffect(() =>{
-    gsap.to([featureCard1, featureCard2, featureCard3, featureCard4],{
+    gsap.to(featuredContainer,{
         duration: 3,
         y: -5,
         opacity: 1,
         ease: Power3.easeIn,
-        delay: .5
+        delay: 2,
+        scrollTrigger: {
+          trigger: featuredContainer,
+          markers: true,
+          start: "top center"
+        }
     
     })
   })
 
   return (
-    <div className='features-container fadeIn' ref={el}>
+    <div className='features-container' ref={el => {featuredContainer = el}}>
         <h4 className='our-feature-main-text'>Our Features</h4>
         <div className='features-cards'>
-          <div className='feature-card' ref={el => {featureCard1 = el}}
+          <div className='feature-card'
           >
             <img src={bestGuideIcon} alt="Best Guide Icon" />
             <h5>Best Guide</h5>
             <p>Suspendisse ultrices nibh <br/> non cursus sagittis. Morbi <br/>dictum consequat ex, quis <br/>finibus magna.</p>
             <a href='##'><FaArrowRight className='link-icon'/></a>
           </div>
-          <div className='feature-card'ref={el => {featureCard2 = el}}
+          <div className='feature-card'
           >
             <img src={discountIcon} alt="More Discount Icon" />
             <h5>More Discount</h5>
             <p>Suspendisse ultrices nibh <br/> non cursus sagittis. Morbi <br/>dictum consequat ex, quis <br/>finibus magna.</p>
             <a href='##'><FaArrowRight className='link-icon'/></a>
           </div>
-          <div className='feature-card' ref={el => {featureCard3 = el}}
+          <div className='feature-card'
           >
             <img src={privateIcon} alt="Private Icon" />
             <h5>Private</h5>
             <p>Suspendisse ultrices nibh <br/> non cursus sagittis. Morbi <br/>dictum consequat ex, quis <br/>finibus magna.</p>
             <a href='##'><FaArrowRight className='link-icon'/></a>
           </div>
-          <div className='feature-card'ref={el => {featureCard4 = el}}
+          <div className='feature-card'
         >
             <img src={onlineSupportIcon} alt="Online Support Icon" />
             <h5>Online Support </h5>
