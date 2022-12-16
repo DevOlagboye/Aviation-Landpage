@@ -6,22 +6,25 @@ import privateIcon from "../../Assets/images/Private-icon.png"
 import onlineSupportIcon from "../../Assets/images/online-support-icon.png"
 import { FaArrowRight } from "react-icons/fa";
 import {gsap, Power3} from "gsap"
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const Booking = () => {
+  gsap.registerPlugin(ScrollTrigger);
   let featuredContainer = useRef(null)
 
   useEffect(() =>{
-    gsap.to(featuredContainer,{
+    gsap.to(featuredContainer,
+      {
         duration: 3,
         y: -10,
         opacity: 1,
-        ease: Power3.easeIn,
+        ease: Power3.easeInOut,
         delay: 2,
         scrollTrigger: {
           trigger: featuredContainer,
-          markers: true,
-          start: "top top",
-          end: "bottom center",
+          markers: false,
+          start: "0%",
+          end: "5%",
           scrub: true,
         }
     
