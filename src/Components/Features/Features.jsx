@@ -22,7 +22,7 @@ const Booking = () => {
         delay: 3,
         scrollTrigger: {
           trigger: featuredContainer,
-          markers: true,
+          markers: false,
           start: "-190%",
           end: "5%",
           scrub: true,
