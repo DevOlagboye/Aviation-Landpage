@@ -10,7 +10,7 @@ import Testimonials from './Components/Testimonials/Testimonials';
 import Memories from './Components/Memories/Memories';
 import Newsletter from './Components/Newsletter/Newsletter';
 import Footer from './Components/Footer/Footer';
-import {gsap, Power4} from "gsap"
+import {gsap, Power3} from "gsap"
 
 
 function App() {
@@ -25,8 +25,8 @@ function App() {
   const fadeIn = (element) => {
     gsap.to(element, {duration: 1,
       opacity: 1,
-      y: -60,
-      ease: Power4.easeOut,
+      x: 0,
+      ease: Power3.easeOut,
       stagger: {
         amount: .3
       }
@@ -35,9 +35,9 @@ function App() {
   }
   const fadeOut = (element) => {
     gsap.to(element, {duration: 1,
-      opacity:0,
-      y: -20,
-      ease: "power4.out",
+      opacity: 0,
+      x: -20,
+      ease: Power3.easeOut,
       })
   }
 
