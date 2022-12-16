@@ -14,13 +14,6 @@ import {gsap, Power3} from "gsap"
 
 
 function App() {
-  const sectionRef = useRef(null)
-
-  const intersection = useIntersection(sectionRef,{
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.5
-  } );
 
   const fadeIn = (element) => {
     gsap.to(element, {duration: 1,
@@ -40,11 +33,7 @@ function App() {
       ease: Power3.easeOut,
       })
   }
-
-  intersection && intersection.intersectionRatio < 0.5 
-  //Not reached
-  ? fadeOut(".fadeIn")
-  :  fadeIn(".fadeIn") // We've reached so animate
+ // We've reached so animate
   useEffect(() => {
     gsap.to(App, {visibility: "visible"})
   })
