@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useEffect} from 'react';
+import React from 'react';
 import HeroPage from './Components/HeroPage/HeroPage';
 import Features from "./Components/Features/Features";
 import Cta from './Components/Cta/Cta';
@@ -9,15 +9,13 @@ import Testimonials from './Components/Testimonials/Testimonials';
 import Memories from './Components/Memories/Memories';
 import Newsletter from './Components/Newsletter/Newsletter';
 import Footer from './Components/Footer/Footer';
-import {gsap} from "gsap"
+
 
 
 function App() {
-  useEffect(() => {
-    gsap.to(App, {visibility: "visible"})
-  })
+  
   return (
-    <div className='App' ref={el => {App = el}}>
+    <div>
       <HeroPage/>
       <Features/>
       <Cta/>
