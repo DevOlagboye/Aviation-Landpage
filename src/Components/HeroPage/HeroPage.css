@@ -6,6 +6,10 @@
     width: 100%;
 }
 
+.hero-container .menu-bar {
+    color: #FFF;
+}
+
 .hero-menu {
     padding-top: 40px;
     display: flex;

@@ -1,7 +1,7 @@
 import React, {useState, useMemo, useRef, useEffect} from 'react'
 import Select from "react-select"
 import countryList from "react-select-country-list"
-import { DatePicker } from 'antd'
+import { DatePicker, Drawer } from 'antd'
 import "./HeroPage.css"
 import mainAircraft from "../../Assets/images/MainAircraft.png"
 import aircraftLogo from "../../Assets/images/logo.png"
@@ -10,6 +10,7 @@ import travelersIcon from "../../Assets/images/travelers-icon.png"
 import checkInIcon from "../../Assets/images/check-in-icon.png"
 import gsap, {Power3} from "gsap"
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { FaBars, FaTimes } from 'react-icons/fa'
 const HeroPage = () => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -53,6 +54,16 @@ const HeroPage = () => {
             )
         
     }, [])
+    const [open, setOpen] = useState(false)
+    const [size, setSize] = useState()
+
+    const showNavBar = () =>{
+        setSize("200px")
+        setOpen(true)
+    }
+    const onClose = () => {
+        setOpen(false)
+    }
     
   return (
     <div className='hero-container'>
@@ -66,6 +77,17 @@ const HeroPage = () => {
             </ul>
             <button>Let's Fly</button>
         </div>
+        <FaBars className='menu-bar' onClick={showNavBar}/>
+        <Drawer placement='right' open={open} className='menu-drawer' size={size} onClose={onClose}>
+            <FaTimes onClick={onClose} className="closeIcon"/>
+            <ul>
+                <li className='active'>All Flight</li>
+                <li>Schedule</li>
+                <li>Passengers</li>
+                <li>Your Orders</li>
+            </ul>
+            <button>Let's Fly</button>
+        </Drawer>
         <div className='hero-aviation-aircraft'>
             <img src={mainAircraft} alt="" className='hero-image' />
         </div>
