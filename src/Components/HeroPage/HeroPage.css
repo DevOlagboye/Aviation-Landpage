@@ -8,6 +8,7 @@
 
 .hero-container .menu-bar {
     color: #FFF;
+    display: none;
 }
 
 .hero-menu {
@@ -228,6 +229,13 @@
     }
     .hero-page-text p {
         font-size: 12px;
+    }
+    .hero-menu img {
+        width: 150px;
+        margin-right: 50%;
+    }
+    .hero-container .menu-bar {
+        display: flex;
     }
 }
 
