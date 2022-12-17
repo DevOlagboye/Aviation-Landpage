@@ -9,6 +9,40 @@
 .hero-container .menu-bar {
     color: #FFF;
     display: none;
+    font-size: 18px;
+}
+
+.hero-container .menu-bar:hover {
+    cursor: pointer;
+}
+
+.menu-drawer {
+    background: #010223 !important;
+    color: #FFF !important;
+}
+
+.menu-drawer ul li {
+    list-style: none;
+    margin: 20px 0px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.menu-drawer .closeIcon {
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.menu-drawer .closeIcon:hover {
+    cursor: pointer;
+}
+
+.menu-drawer button {
+    background: transparent;
+    color: #FFF;
+    border: 2px #FFF solid;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
 }
 
 .hero-menu {

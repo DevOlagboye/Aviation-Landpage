@@ -10,7 +10,7 @@ import travelersIcon from "../../Assets/images/travelers-icon.png"
 import checkInIcon from "../../Assets/images/check-in-icon.png"
 import gsap, {Power3} from "gsap"
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import { FaAlignRight, FaTimes } from 'react-icons/fa'
 const HeroPage = () => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -55,10 +55,8 @@ const HeroPage = () => {
         
     }, [])
     const [open, setOpen] = useState(false)
-    const [size, setSize] = useState()
 
     const showNavBar = () =>{
-        setSize("200px")
         setOpen(true)
     }
     const onClose = () => {
@@ -76,9 +74,10 @@ const HeroPage = () => {
                 <li>Your Orders</li>
             </ul>
             <button>Let's Fly</button>
-            <FaBars className='menu-bar' onClick={showNavBar}/>
+            <FaAlignRight className='menu-bar' onClick={showNavBar}/>
         </div>
-        <Drawer placement='bottom' open={open} className='menu-drawer' size={size} onClose={onClose}>
+        <Drawer closable={false} placement='bottom' open={open} className='menu-drawer' onClose={onClose}>
+            <FaTimes onClick={onClose} className="closeIcon"/>
             <ul>
                 <li className='active'>All Flight</li>
                 <li>Schedule</li>
