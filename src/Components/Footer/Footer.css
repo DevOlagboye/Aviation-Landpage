@@ -53,6 +53,8 @@
 
 .footer-container ul li:hover {
     cursor: pointer;
+    color: #313EF7;
+    transition: ease-in .5s;
 }
 
 .footer-container .footer-divider {
