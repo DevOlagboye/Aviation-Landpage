@@ -5,6 +5,7 @@
     align-items: center;
     gap: 80px;
     flex-wrap: wrap;
+    opacity: 0;
 }
 
 .cta-details {
