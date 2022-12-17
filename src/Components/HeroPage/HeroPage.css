@@ -227,6 +227,12 @@
     }
 }
 
+@media only screen and (min-width: 600px) {
+    .hero-aviation-aircraft img {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     .hero-page-text h4 {
         font-size: 20px;
