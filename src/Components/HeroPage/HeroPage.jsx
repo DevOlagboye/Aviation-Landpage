@@ -76,10 +76,9 @@ const HeroPage = () => {
                 <li>Your Orders</li>
             </ul>
             <button>Let's Fly</button>
+            <FaBars className='menu-bar' onClick={showNavBar}/>
         </div>
-        <FaBars className='menu-bar' onClick={showNavBar}/>
-        <Drawer placement='right' open={open} className='menu-drawer' size={size} onClose={onClose}>
-            <FaTimes onClick={onClose} className="closeIcon"/>
+        <Drawer placement='bottom' open={open} className='menu-drawer' size={size} onClose={onClose}>
             <ul>
                 <li className='active'>All Flight</li>
                 <li>Schedule</li>
