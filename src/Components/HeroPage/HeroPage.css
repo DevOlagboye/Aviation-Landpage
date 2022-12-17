@@ -193,7 +193,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .hero-aviation-aircraft img {
         width: 350px;
     }
@@ -227,7 +227,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media only screen and (max-width: 400px) {
     .hero-page-text h4 {
         font-size: 20px;
     }
