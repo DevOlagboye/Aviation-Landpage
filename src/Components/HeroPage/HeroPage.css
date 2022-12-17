@@ -234,11 +234,30 @@
     .booking-container {
         height: 350px;
     }
+    .hero-menu img {
+        margin-right: 10%;
+    }
+    .hero-menu ul li {
+        margin: 0px 8px 0px 8px;
+    }
+    .hero-menu button {
+        padding: 5px 10px 5px 10px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     .booking-container {
         height: 210px;
+    }
+    .hero-menu img {
+        width: 150px;
+        margin-right: 37%;
+    }
+    .hero-menu button {
+        padding: 10px 20px 10px 20px;
+    }
+    .hero-menu ul li {
+        margin: 0px 20px 0px 20px;
     }
 }
 
