@@ -227,9 +227,18 @@
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     .hero-aviation-aircraft img {
         width: 100%;
+    }
+    .booking-container {
+        height: 350px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .booking-container {
+        height: 210px;
     }
 }
 
