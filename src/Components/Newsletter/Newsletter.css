@@ -28,6 +28,10 @@
     position: relative;
 }
 
+.newsletter-container input:focus {
+    outline: none;
+}
+
 .newsletter-container button {
     padding: 10px;
     border: none;
