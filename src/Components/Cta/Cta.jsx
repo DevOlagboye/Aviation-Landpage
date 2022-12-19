@@ -11,7 +11,7 @@ const Cta = () => {
     useEffect(() => {
         gsap.fromTo(ctaContainers,{
             opacity: 0,
-            scale: 0.4,
+            scale: 0.5,
             y: -20
         },{
             opacity: 1,
