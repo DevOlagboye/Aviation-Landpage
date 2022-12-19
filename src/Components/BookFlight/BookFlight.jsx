@@ -29,14 +29,14 @@ const BookFlight = () => {
         })
     }, [])
   return (
-    <div className='book-flight-container' ref={el => {bookFlight = el}}>
+    <div className='book-flight-container'>
         <div className='book-flight-details'>
             <div className='book-flight-text-image'>
                 <h4>Book Popular Flight <br/> Tickets</h4>
                 <p>Lorem Ipsum is simply dummy text of the printing and <br/>typesetting industry. Lorem Ipsum has been the industry's</p>
-                <img src={AirDeliveryImage} alt="Air Craft Delivery" className='air-delivery-image' />
+                <img src={AirDeliveryImage} alt="Air Craft Delivery" className='air-delivery-image' ref={el => {bookFlight = el}}/>
             </div>
-            <div className='book-flight-ticket'>
+            <div className='book-flight-ticket' ref={el => {bookFlight = el}}>
                 <img src={TicketImage} alt="Book Flight Ticket" />
             </div>
         </div>
