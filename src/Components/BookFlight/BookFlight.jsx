@@ -7,9 +7,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const BookFlight = () => {
   let bookFlight = useRef(null)
+  let ticketImage = useRef(null)
     gsap.registerPlugin(ScrollTrigger);
     useEffect(() => {
-        gsap.fromTo(bookFlight,{
+        gsap.fromTo([bookFlight,ticketImage],{
             opacity: 0,
             scale: 0.5,
             y: -20
@@ -21,7 +22,7 @@ const BookFlight = () => {
             ease: Power3.easeIn,
             scrollTrigger: {
                 markers: false,
-                trigger: bookFlight,
+                trigger: [bookFlight,ticketImage],
                  start: "-190%",
                  end: "-100%",
                 scrub: true
@@ -36,8 +37,8 @@ const BookFlight = () => {
                 <p>Lorem Ipsum is simply dummy text of the printing and <br/>typesetting industry. Lorem Ipsum has been the industry's</p>
                 <img src={AirDeliveryImage} alt="Air Craft Delivery" className='air-delivery-image' ref={el => {bookFlight = el}}/>
             </div>
-            <div className='book-flight-ticket' ref={el => {bookFlight = el}}>
-                <img src={TicketImage} alt="Book Flight Ticket" />
+            <div className='book-flight-ticket'>
+                <img src={TicketImage} alt="Book Flight Ticket" ref={el => {ticketImage = el}} />
             </div>
         </div>
     </div>
