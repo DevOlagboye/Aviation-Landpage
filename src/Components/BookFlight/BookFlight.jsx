@@ -12,14 +12,14 @@ const BookFlight = () => {
     useEffect(() => {
         gsap.fromTo([bookFlight,ticketImage],{
             opacity: 0,
-            scale: 0.5,
+            scale: 0.6,
             y: -20
         },{
             opacity: 1,
             y: 0,
             scale: 1,
             duration: 5,
-            ease: Power3.easeIn,
+            ease: Power3.easeInOut,
             scrollTrigger: {
                 markers: false,
                 trigger: [bookFlight,ticketImage],

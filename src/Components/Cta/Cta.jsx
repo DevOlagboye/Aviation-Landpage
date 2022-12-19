@@ -18,7 +18,8 @@ const Cta = () => {
             y: 0,
             scale: 1,
             duration: 5,
-            ease: Power3.easeIn,
+            delay: 1,
+            ease: Power3.easeInOut,
             scrollTrigger: {
                 markers: false,
                 trigger: ctaContainers,
