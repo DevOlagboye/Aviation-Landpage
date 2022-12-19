@@ -129,6 +129,7 @@
     box-shadow: 2px 2px 20px 40px rgba(0, 0, 0, 0.05);
     margin: 90px;
     position: relative;
+    display: none;
 }
 
 .booking-category {
