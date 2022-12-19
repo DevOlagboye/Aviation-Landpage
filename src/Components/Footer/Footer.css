@@ -1,6 +1,8 @@
 .footer-container {
     background: url("../../Assets/images/Footer-background.png");
     padding: 50px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .footer-content-details {
