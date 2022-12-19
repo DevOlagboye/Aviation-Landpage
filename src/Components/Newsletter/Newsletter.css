@@ -1,6 +1,8 @@
 .newsletter-container {
     background: rgba(49, 62, 247, 0.05);
     padding: 50px;
+    width: 100%;
+    overflow: hidden !important;
 }
 
 .newsletter-container h4 {
