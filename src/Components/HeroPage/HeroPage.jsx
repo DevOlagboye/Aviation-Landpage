@@ -81,7 +81,7 @@ const HeroPage = () => {
             <ul>
                 <li className='active' onClick={onClose}>All Flight</li>
                 <li onClick={onClose}>Schedule</li>
-                <li>Passengers</li>
+                <li onClick={onClose}>Passengers</li>
                 <li>Your Orders</li>
             </ul>
             <button>Let's Fly</button>
