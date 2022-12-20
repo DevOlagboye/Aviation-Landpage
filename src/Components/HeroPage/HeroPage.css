@@ -45,6 +45,10 @@
     border-radius: 20px;
 }
 
+.menu-drawer button:hover {
+    color: #313FF7;
+}
+
 .hero-menu {
     padding-top: 40px;
     display: flex;
