@@ -80,7 +80,7 @@ const HeroPage = () => {
             <FaTimes onClick={onClose} className="closeIcon"/>
             <ul>
                 <li className='active' onClick={onClose}>All Flight</li>
-                <li>Schedule</li>
+                <li onClick={onClose}>Schedule</li>
                 <li>Passengers</li>
                 <li>Your Orders</li>
             </ul>
