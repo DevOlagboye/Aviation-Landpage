@@ -79,7 +79,7 @@ const HeroPage = () => {
         <Drawer closable={false} placement='bottom' open={open} className='menu-drawer' onClose={onClose}>
             <FaTimes onClick={onClose} className="closeIcon"/>
             <ul>
-                <li className='active'>All Flight</li>
+                <li className='active' onClick={onClose}>All Flight</li>
                 <li>Schedule</li>
                 <li>Passengers</li>
                 <li>Your Orders</li>
