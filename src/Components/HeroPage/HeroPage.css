@@ -90,10 +90,12 @@
     border: 2px #FFF solid;
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
+    transition: ease-in .5s;
 }
 
 .hero-menu button:hover {
     cursor: pointer;
+    color: #313FF7;
 }
 
 .hero-aviation-aircraft {
