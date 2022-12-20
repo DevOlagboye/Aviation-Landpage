@@ -1,3 +1,14 @@
+# Inspiration behind this Project
+
+Saw this beautiful Aviation Website Design from the [Figma community](https://figma.com/community) and decided to implement it to brush up my React Experience
+
+Here is the design and the full Implementation is in the Repo
+
+[The Figma Design and Assets Used](https://www.figma.com/file/FoRcyMXCehrZKNJ0UMDY9q/Aviation-landing-page-(Community)?node-id=2%3A6722&t=F1Sjid14iIhYzJ35-0)
+
+Details to Run it on your local server is here
+
+In case you want to build more projects and you need some UI for inspiration you could try checking out Figma community here [The Figma Design and Assets Used](https://www.figma.com/file/FoRcyMXCehrZKNJ0UMDY9q/Aviation-landing-page-(Community)?node-id=2%3A6722&t=F1Sjid14iIhYzJ35-0)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +79,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Thank you!!!
