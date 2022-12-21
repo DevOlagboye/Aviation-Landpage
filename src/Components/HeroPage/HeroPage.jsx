@@ -124,7 +124,7 @@ const HeroPage = () => {
                     <div className='booking-features-details'>
                         <img src={bookingLocation} alt="booking location" />
                         <h5>Location<br/>
-                            <Select placeholder={"Where are you going"} options={options} value={value} onChange={changeHandler} styles={{
+                            <Select required placeholder={"Where are you going"} options={options} value={value} onChange={changeHandler} styles={{
                                 control: (baseStyles, state) =>({
                                     ...baseStyles,
                                     border: "none",
@@ -152,7 +152,7 @@ const HeroPage = () => {
                         </h5>
                     </div>
                 </div>
-                    <button onMouseLeave={handleShrink} onMouseEnter={handleExpand} ref={el => {bookButton = el}} type='submit' className='book-button'>
+                    <button onMouseLeave={handleShrink} onMouseEnter={handleExpand} ref={el => {bookButton = el}} type='submit' className='book-button' onClick={handleNavigate}>
                         Book Now
                     </button>
         </div>
