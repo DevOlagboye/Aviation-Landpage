@@ -12,7 +12,8 @@ const SuccessPage = () => {
     <div className='success-container'>
          <Alert className='success-alert' onClose={handleClose}
       message="Book Successful"
-      description="Hi there, You've Successful booked your ticket kindly check your gmail for mor information from us"
+      description="Hi there, You've Successful booked your ticket kindly check your gmail for more information from us.
+      PS: Kindly Click the Cancel button to go back home"
       type="success"
       showIcon
       closable
