@@ -21,7 +21,10 @@ import Memories from '../Memories/Memories';
 import Newsletter from '..//Newsletter/Newsletter';
 import Footer from '../Footer/Footer';
 const HeroPage = () => {
-
+    const navigate = useNavigate()
+    const handleNavigate = () =>{
+        navigate("/success")
+    }
     gsap.registerPlugin(ScrollTrigger);
     const changeDate = (date, dateString) =>{
         console.log(date, dateString);
