@@ -236,6 +236,8 @@
     border: none;
     border-radius: 26px;
     box-shadow: 3px 3px 15px 10px rgba(70, 70, 232, 0.166);
+    position: relative;
+    z-index: 9999;
 }
 
 .book-button:hover {
