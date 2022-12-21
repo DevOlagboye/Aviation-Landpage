@@ -1,4 +1,5 @@
 import './App.css';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import React from 'react';
 import HeroPage from './Components/HeroPage/HeroPage';
 import Features from "./Components/Features/Features";
@@ -9,6 +10,7 @@ import Testimonials from './Components/Testimonials/Testimonials';
 import Memories from './Components/Memories/Memories';
 import Newsletter from './Components/Newsletter/Newsletter';
 import Footer from './Components/Footer/Footer';
+import SuccessPage from './Components/SuccessPage/SuccessPage';
 
 
 
@@ -25,6 +27,11 @@ function App() {
       <Memories/>
       <Newsletter/>
       <Footer/>
+      <Router>
+        <Routes>
+          <Route path="success" element={<SuccessPage/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
