@@ -1,5 +1,6 @@
 import React from 'react'
 import {Alert} from 'antd'
+import "./SucessPage.css"
 
 const SuccessPage = () => {
   return (
