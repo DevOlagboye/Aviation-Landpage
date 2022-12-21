@@ -1,5 +1,4 @@
 import React, {useState, useMemo, useRef, useEffect} from 'react'
-import {Form} from "react-router-dom"
 import Select from "react-select"
 import countryList from "react-select-country-list"
 import { DatePicker, Drawer } from 'antd'
@@ -13,8 +12,8 @@ import gsap, {Power3} from "gsap"
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { FaAlignRight, FaTimes } from 'react-icons/fa'
 const HeroPage = () => {
-    gsap.registerPlugin(ScrollTrigger);
 
+    gsap.registerPlugin(ScrollTrigger);
     const changeDate = (date, dateString) =>{
         console.log(date, dateString);
     }
