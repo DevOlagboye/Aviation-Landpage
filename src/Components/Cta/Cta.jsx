@@ -18,13 +18,13 @@ const Cta = () => {
             y: 0,
             scale: 1,
             duration: 5,
-            delay: 1,
             ease: Power3.easeInOut,
             scrollTrigger: {
                 markers: false,
                 trigger: ctaContainers,
                  start: "-190%",
                  end: "-100%",
+                 delay: 1,
                 scrub: true
             }
         })
