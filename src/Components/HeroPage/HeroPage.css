@@ -157,6 +157,14 @@
     border-radius: 50%;
 }
 
+.booking-features-details input {
+    border: none;
+}
+
+.booking-features-details input:focus {
+    outline: none;
+}
+
 .booking-features-details .date-picker {
     border: none;
 }

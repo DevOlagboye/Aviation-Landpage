@@ -21,9 +21,21 @@ import Memories from '../Memories/Memories';
 import Newsletter from '..//Newsletter/Newsletter';
 import Footer from '../Footer/Footer';
 const HeroPage = () => {
+
+    let logoItem = useRef(null)
+    let bookButton = useRef(null)
+    let heroPageText = useRef(null)
+    let heroPageTextP = useRef(null)
+    let bookInput = useRef(null)
+
     const navigate = useNavigate()
     const handleNavigate = () =>{
-        navigate("/success")
+        if(bookInput.value == ""){
+            bookInput.style = "border: 1.5px red solid";
+        }else{
+            navigate("/success")
+        }
+
     }
     gsap.registerPlugin(ScrollTrigger);
     const changeDate = (date, dateString) =>{
@@ -36,10 +48,6 @@ const HeroPage = () => {
         setValue(value)
     }
 
-    let logoItem = useRef(null)
-    let bookButton = useRef(null)
-    let heroPageText = useRef(null)
-    let heroPageTextP = useRef(null)
 
     const [expand, setExpand] = useState(false)
     const handleExpand = () =>{
@@ -136,7 +144,7 @@ const HeroPage = () => {
                     <div className='booking-features-details'>
                         <img src={travelersIcon} alt="Travelers Icon" />
                         <h5>Travelers<br/>
-                            <input required type="text" placeholder='Add Guest'/>
+                            <input required type="text" placeholder='Add Guest' ref={el => {bookInput = el}}/>
                         </h5>
                     </div>
                     <div className='booking-features-details'>
