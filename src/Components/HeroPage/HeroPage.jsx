@@ -136,7 +136,7 @@ const HeroPage = () => {
                     <div className='booking-features-details'>
                         <img src={travelersIcon} alt="Travelers Icon" />
                         <h5>Travelers<br/>
-                            <span>Add guest</span>
+                            <input required type="text" placeholder='Add Guest'/>
                         </h5>
                     </div>
                     <div className='booking-features-details'>
