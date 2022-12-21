@@ -140,11 +140,9 @@ const HeroPage = () => {
                         </h5>
                     </div>
                 </div>
-                <form>
                     <button onMouseLeave={handleShrink} onMouseEnter={handleExpand} ref={el => {bookButton = el}} type='submit' className='book-button'>
                         Book Now
                     </button>
-                </form>
         </div>
     </div>
   )
