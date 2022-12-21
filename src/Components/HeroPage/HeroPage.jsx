@@ -11,6 +11,14 @@ import checkInIcon from "../../Assets/images/check-in-icon.png"
 import gsap, {Power3} from "gsap"
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { FaAlignRight, FaTimes } from 'react-icons/fa'
+import Features from "../Features/Features"
+import Cta from '../Cta/Cta';
+import BookFlight from '../BookFlight/BookFlight';
+import BestTravelers from '../BestTravelers/BestTravelers';
+import Testimonials from '../Testimonials/Testimonials';
+import Memories from '../Memories/Memories';
+import Newsletter from '..//Newsletter/Newsletter';
+import Footer from '../Footer/Footer';
 const HeroPage = () => {
 
     gsap.registerPlugin(ScrollTrigger);
@@ -64,6 +72,7 @@ const HeroPage = () => {
     }
     
   return (
+    <div>
     <div className='hero-container'>
         <div className='hero-menu'>
             <img src={aircraftLogo} alt="" ref={el => {logoItem = el}}/>
@@ -143,6 +152,15 @@ const HeroPage = () => {
                         Book Now
                     </button>
         </div>
+    </div>
+      <Features/>
+      <Cta/>
+      <BookFlight/>
+      <BestTravelers/>
+      <Testimonials/>
+      <Memories/>
+      <Newsletter/>
+      <Footer/>
     </div>
   )
 }
