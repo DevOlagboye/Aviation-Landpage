@@ -12,7 +12,7 @@ const BookFlight = () => {
     useEffect(() => {
         gsap.fromTo(ticketImage,{
             opacity: 0.1,
-            x: -15
+            x: 0
         },{
             opacity: 1,
             x: -50,
