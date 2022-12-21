@@ -11,7 +11,7 @@ const BookFlight = () => {
     gsap.registerPlugin(ScrollTrigger);
     useEffect(() => {
         gsap.fromTo(ticketImage,{
-            opacity: 0.2,
+            opacity: 0.1,
             x: -15
         },{
             opacity: 1,
