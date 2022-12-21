@@ -160,6 +160,8 @@
 .booking-features-details input {
     border: none;
     padding: 7px 0px 7px 4px;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
 }
 
 .booking-features-details input:focus {
