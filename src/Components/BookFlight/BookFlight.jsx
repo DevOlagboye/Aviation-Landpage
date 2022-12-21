@@ -11,16 +11,20 @@ const BookFlight = () => {
     gsap.registerPlugin(ScrollTrigger);
     useEffect(() => {
         gsap.fromTo(ticketImage,{
-            opacity: 0,
+            opacity: 0.2,
+            x: -15
         },{
             opacity: 1,
+            x: -50,
             duration: 5,
-            ease: Power3.easeInOut,
+            ease: Power3.easeIn,
             scrollTrigger: {
                 markers: false,
+                duration: 5,
                 trigger: ticketImage,
-                 start: "-190%",
-                 end: "-100%",
+                 start: "0%",
+                 end: "5%",
+                 delay: 2,
                 scrub: true
             }
         })
