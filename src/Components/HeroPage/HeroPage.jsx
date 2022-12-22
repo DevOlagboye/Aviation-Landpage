@@ -132,7 +132,7 @@ const HeroPage = () => {
                     <div className='booking-features-details'>
                         <img src={bookingLocation} alt="booking location" />
                         <h5>Location<br/>
-                            <Select required placeholder={"Where are you going"} options={options} value={value} onChange={changeHandler} styles={{
+                            <Select className="select-option" required placeholder={"Where are you going"} options={options} value={value} onChange={changeHandler} styles={{
                                 control: (baseStyles, state) =>({
                                     ...baseStyles,
                                     border: "none",
