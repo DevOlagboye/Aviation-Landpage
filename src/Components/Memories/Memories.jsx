@@ -1,27 +1,17 @@
 import React from 'react'
-import Memories1 from "../../Assets/images/Memories1.png"
-import Memories2 from "../../Assets/images/Memories2.png"
-import Memories3 from "../../Assets/images/Memories3.png"
-import Memories4 from "../../Assets/images/Memories4.png"
 import "./Memories.css"
+import { memoriesImages } from './data'
 
 const Memories = () => {
   return (
     <div className='memories-container'>
         <h4>Make Memories With Us</h4>
         <div className='memories-cards'>
-            <div className='memories-card'>
-                <img src={Memories1} alt="" />
+            {memoriesImages.map(Memory => (
+                <div className='memories-card'>
+                <img src={Memory.memoryImage} alt="" />
             </div>
-            <div className='memories-card'>
-                <img src={Memories2} alt="" />
-            </div>
-            <div className='memories-card'>
-                <img src={Memories3} alt="" />
-            </div>
-            <div className='memories-card'>
-                <img src={Memories4} alt="" />
-            </div>
+            ))}
         </div>
     </div>
   )
