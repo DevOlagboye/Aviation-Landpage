@@ -16,6 +16,10 @@
     flex-wrap: wrap;
 }
 
+.memories-cards:hover {
+    cursor: pointer;
+}
+
 .memories-card:nth-child(2) {
     margin-top: 50px;
 }
