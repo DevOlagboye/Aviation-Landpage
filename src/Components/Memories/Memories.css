@@ -16,7 +16,7 @@
     flex-wrap: wrap;
 }
 
-.memories-cards:hover {
+.memories-card:hover {
     cursor: pointer;
 }
 
