@@ -22,7 +22,7 @@ const BestTravelers = () => {
         ease: Power3.easeIn,
         scrollTrigger: {
           trigger: bestTravelerContainer,
-          markers: true,
+          markers: false,
           start: "0%",
           end: "7%",
           scrub: true,
