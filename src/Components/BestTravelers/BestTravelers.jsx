@@ -1,5 +1,6 @@
 import React, {useRef, useEffect} from 'react'
 import "./BestTravelers.css"
+import {gsap, Power3} from "gsap"
 import { bestTravelers } from './data'
 
 
