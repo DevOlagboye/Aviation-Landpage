@@ -12,19 +12,21 @@ const BestTravelers = () => {
   let bestTravelerContainer = useRef(null)
 
   useEffect(() =>{
-    gsap.to(bestTravelerContainer,
+    gsap.fromTo(bestTravelerContainer,
       {
         duration: 5,
+        opacity: 0
+      },{
         y: -20,
         opacity: 1,
         ease: Power3.easeIn,
-        delay: 3,
         scrollTrigger: {
           trigger: bestTravelerContainer,
-          markers: false,
-          start: "-190%",
-          end: "5%",
+          markers: true,
+          start: "0%",
+          end: "7%",
           scrub: true,
+          delay: 3
         }
     
     });
