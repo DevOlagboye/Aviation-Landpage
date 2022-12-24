@@ -7,8 +7,30 @@ import { bestTravelers } from './data'
 
 
 const BestTravelers = () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  let bestTravelerContainer = useRef(null)
+
+  useEffect(() =>{
+    gsap.to(bestTravelerContainer,
+      {
+        duration: 5,
+        y: -20,
+        opacity: 1,
+        ease: Power3.easeIn,
+        delay: 3,
+        scrollTrigger: {
+          trigger: bestTravelerContainer,
+          markers: false,
+          start: "-190%",
+          end: "5%",
+          scrub: true,
+        }
+    
+    });
+  }, [])
   return (
-    <div className='best-traveler-container'>
+    <div className='best-traveler-container' ref={el => {bestTravelerContainer = el}}>
         <h4>Best Travelers Of This Month</h4>
     <div className='best-traveler-gallery'>
         {bestTravelers.map(bestTraveler => (
