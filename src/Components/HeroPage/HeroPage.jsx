@@ -31,7 +31,6 @@ const HeroPage = () => {
     if (bookInput.value === "") {
       bookInput.style = "border: 1.5px red solid";
     } else
-    bookInput.style = "border: 1.5px green solid"
       messageApi.open({
         type: "loading",
         content: "Booking Flight...",
