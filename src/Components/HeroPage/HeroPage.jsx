@@ -2,7 +2,7 @@ import React, {useState, useMemo, useRef, useEffect} from 'react'
 import { useNavigate } from 'react-router-dom'
 import Select from "react-select"
 import countryList from "react-select-country-list"
-import { DatePicker, Drawer } from 'antd'
+import { DatePicker, Drawer, message } from 'antd'
 import "./HeroPage.css"
 import mainAircraft from "../../Assets/images/MainAircraft.png"
 import aircraftLogo from "../../Assets/images/logo.png"
@@ -27,7 +27,13 @@ const HeroPage = () => {
     let heroPageText = useRef(null)
     let heroPageTextP = useRef(null)
     let bookInput = useRef(null)
-
+    const [messageApi, contextHolder] = message.useMessage()
+    const success = () =>{
+        messageApi.open({
+            type: 'success',
+            content: 'Flight Booked Successfully!'
+        })
+    }
     const navigate = useNavigate()
     const handleNavigate = () =>{
         if(bookInput.value === ""){
