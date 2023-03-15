@@ -28,18 +28,15 @@ const HeroPage = () => {
     let heroPageTextP = useRef(null)
     let bookInput = useRef(null)
     const [messageApi, contextHolder] = message.useMessage()
-    const success = () =>{
-        messageApi.open({
-            type: 'success',
-            content: 'Flight Booked Successfully!'
-        })
-    }
     const navigate = useNavigate()
     const handleNavigate = () =>{
         if(bookInput.value === ""){
             bookInput.style = "border: 1.5px red solid";
         }else{
-            navigate("/success")
+            messageApi.open({
+                type: 'success',
+                content: 'Flight Booked Successfully!'
+            })
         }
 
     }
