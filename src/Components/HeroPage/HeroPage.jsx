@@ -30,7 +30,7 @@ const HeroPage = () => {
 
     const navigate = useNavigate()
     const handleNavigate = () =>{
-        if(bookInput.value == ""){
+        if(bookInput.value === ""){
             bookInput.style = "border: 1.5px red solid";
         }else{
             navigate("/success")
