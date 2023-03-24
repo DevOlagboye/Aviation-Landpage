@@ -7,7 +7,7 @@
 }
 
 .hero-container .menu-bar {
-    color: #FFF;
+    color: #fff;
     display: none;
     font-size: 18px;
 }
@@ -18,7 +18,7 @@
 
 .menu-drawer {
     background: #010223 !important;
-    color: #FFF !important;
+    color: #fff !important;
 }
 
 .menu-drawer ul li {
@@ -29,7 +29,7 @@
 }
 
 .menu-drawer ul li.active {
-    border-bottom: 1px #313FF7 solid;
+    border-bottom: 1px #313ff7 solid;
 }
 
 .menu-drawer .closeIcon {
@@ -43,14 +43,14 @@
 
 .menu-drawer button {
     background: transparent;
-    color: #FFF;
-    border: 2px #FFF solid;
+    color: #fff;
+    border: 2px #fff solid;
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
 }
 
 .menu-drawer button:hover {
-    color: #313FF7;
+    color: #313ff7;
 }
 
 .hero-menu {
@@ -73,7 +73,7 @@
 
 .hero-menu ul li {
     list-style: none;
-    color: #FFF;
+    color: #fff;
     margin: 0px 20px 0px 20px;
     transition: ease-in-out 0.6s;
     font-family: "Montserrat", sans-serif;
@@ -81,25 +81,35 @@
 
 .hero-menu ul li:hover {
     cursor: pointer;
-    color: #313FF7;
+    color: #313ff7;
+}
+
+.hero-menu ul li a:hover {
+    color: #313ff7;
 }
 
 .hero-menu ul li.active {
-    border-bottom: #313FF7 3px solid;
+    border-bottom: #313ff7 3px solid;
+}
+
+.hero-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: ease-in-out 0.6s;
 }
 
 .hero-menu button {
     background: transparent;
-    color: #FFF;
-    border: 2px #FFF solid;
+    color: #fff;
+    border: 2px #fff solid;
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
-    transition: ease-in .5s;
+    transition: ease-in 0.5s;
 }
 
 .hero-menu button:hover {
     cursor: pointer;
-    color: #313FF7;
+    color: #313ff7;
 }
 
 .hero-aviation-aircraft {
@@ -118,20 +128,20 @@
 }
 
 .hero-page-text h4 {
-    color: #FFF;
+    color: #fff;
     font-size: 40px;
     margin-bottom: 30px;
     opacity: 0;
 }
 
 .hero-page-text p {
-    color: #FFF;
+    color: #fff;
     font-size: 14px;
     opacity: 0;
 }
 
 .booking-container {
-    background-color: #FFF;
+    background-color: #fff;
     height: 210px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -142,7 +152,7 @@
 }
 
 .booking-category {
-    background: #FFF;
+    background: #fff;
     height: 50px;
     width: 400px;
     border-top-left-radius: 20px;
@@ -205,8 +215,8 @@
 }
 
 .booking-category div.active {
-    background: #313FF7;
-    color: #FFF;
+    background: #313ff7;
+    color: #fff;
     height: 50px;
     border-top-left-radius: 20px;
 }
@@ -245,8 +255,8 @@
 .book-button {
     display: block;
     margin: 20px auto;
-    background: #313FF7;
-    color: #FFF;
+    background: #313ff7;
+    color: #fff;
     padding: 15px 40px 15px 40px;
     border: none;
     border-radius: 26px;

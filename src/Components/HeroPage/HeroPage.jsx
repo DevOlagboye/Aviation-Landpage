@@ -31,12 +31,14 @@ const HeroPage = () => {
     if (bookInput.value === "") {
       bookInput.style = "border: 1.5px red solid";
     } else
-      messageApi.open({
-        type: "loading",
-        content: "Booking Flight...",
-        duration: 2.5
-      }).then(() => message.success('Flight Booked Successfully', 2.5))
-      .then(() => window.location.reload)
+      messageApi
+        .open({
+          type: "loading",
+          content: "Booking Flight...",
+          duration: 2.5,
+        })
+        .then(() => message.success("Flight Booked Successfully", 2.5))
+        .then(() => window.location.reload);
   };
   const navigate = useNavigate();
   const handleNavigate = () => {
@@ -105,7 +107,9 @@ const HeroPage = () => {
           <ul>
             <li className="active">All Flight</li>
             <li>Schedule</li>
-            <li>Passengers</li>
+            <li>
+              <a href="/passengers">Passengers</a>
+            </li>
             <li>Your Orders</li>
           </ul>
           <button>Let's Fly</button>
