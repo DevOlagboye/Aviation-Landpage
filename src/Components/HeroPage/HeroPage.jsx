@@ -12,14 +12,7 @@ import checkInIcon from "../../Assets/images/check-in-icon.png";
 import gsap, { Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaAlignRight, FaInfo, FaTimes } from "react-icons/fa";
-import Features from "../Features/Features";
-import Cta from "../Cta/Cta";
-import BookFlight from "../BookFlight/BookFlight";
-import BestTravelers from "../BestTravelers/BestTravelers";
-import Testimonials from "../Testimonials/Testimonials";
-import Memories from "../Memories/Memories";
-import Newsletter from "..//Newsletter/Newsletter";
-import Footer from "../Footer/Footer";
+
 const HeroPage = () => {
   let logoItem = useRef(null);
   let bookButton = useRef(null);
@@ -245,14 +238,6 @@ const HeroPage = () => {
           </button>
         </div>
       </div>
-      <Features />
-      <Cta />
-      <BookFlight />
-      <BestTravelers />
-      <Testimonials />
-      <Memories />
-      <Newsletter />
-      <Footer />
     </div>
   );
 };
