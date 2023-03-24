@@ -1,13 +1,12 @@
-import React from 'react'
-import HeroPage from '../HeroPage/HeroPage'
-
+import React from "react";
+import HeroPage from "../HeroPage/HeroPage";
 
 const Passengers = () => {
   return (
     <div>
-        <HeroPage/>
+      <HeroPage />
     </div>
-  )
-}
+  );
+};
 
-export default Passengers
+export default Passengers;
