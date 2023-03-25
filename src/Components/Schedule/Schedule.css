@@ -52,6 +52,13 @@
     display: none;
 }
 
+element.style {
+}
+
+.css-1ajit2d-control:hover{
+    border: 3px solid #e0effe;
+}
+
 .schedule-form {
     margin-top: 10%;
     margin: auto;
