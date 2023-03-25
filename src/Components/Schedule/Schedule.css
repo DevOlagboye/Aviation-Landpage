@@ -62,6 +62,7 @@
 }
 
 .css-1ajit2d-control:hover {
+    cursor: pointer !important;
     border: none !important;
 }
 
