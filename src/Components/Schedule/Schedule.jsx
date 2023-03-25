@@ -21,7 +21,9 @@ const Schedule = () => {
           </h4>
         </div>
       </div>
-      <div className="schedule-form"></div>
+      <div className="schedule-form">
+        <h5>Schedule your Flight</h5>
+      </div>
     </div>
   );
 };
