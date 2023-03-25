@@ -49,7 +49,7 @@ const Schedule = () => {
             id="from"
             className="select-option"
             required
-            placeholder={"Where are you going"}
+            placeholder={"Where are you traveling From"}
             options={options}
             value={value}
             onChange={changeHandler}
@@ -68,7 +68,7 @@ const Schedule = () => {
             id="from"
             className="select-option"
             required
-            placeholder={"Where are you going"}
+            placeholder={"Where are you going to"}
             options={options}
             value={traveltoValue}
             onChange={travelTo}
