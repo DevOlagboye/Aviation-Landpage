@@ -27,3 +27,11 @@
     margin-top: 50px;
     margin-left: 30px;
 }
+
+.schedule-text {
+    color: #fff;
+    position: absolute;
+    bottom: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
