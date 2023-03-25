@@ -67,6 +67,7 @@ const Schedule = () => {
                 height: "50px",
                 marginTop: "10px",
                 marginBottom: "20px",
+                borderRadius: "8px",
               }),
             }}
           />
@@ -86,6 +87,7 @@ const Schedule = () => {
                 ...baseStyles,
                 width: "100%",
                 border: "3px solid #e0effe",
+                borderRadius: "8px",
                 height: "50px",
                 marginTop: "10px",
                 marginBottom: "20px",

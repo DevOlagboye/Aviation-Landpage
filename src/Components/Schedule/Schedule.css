@@ -61,6 +61,10 @@
     margin-bottom: 20px;
 }
 
+.css-1ajit2d-control:hover {
+    border: none !important;
+}
+
 .schedule-form {
     margin-top: 10%;
     margin: auto;
@@ -76,6 +80,7 @@
 .input-label {
     font-family: "Poppins", sans-serif;
     font-size: 17px;
+    font-weight: 700;
 }
 
 .email-input::placeholder {
@@ -84,19 +89,38 @@
 
 .dates {
     display: flex;
-    gap: 50px;
+    gap: 20px;
 }
 
 .date-label {
     display: block;
     margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
 }
 
-@media (max-width: 600px) {
+.ant-picker {
+    height: 48px;
+    border: 3px solid #e0effe;
+    border-radius: 8px;
+}
+
+.ant-picker:hover {
+    border: 3px solid #e0effe;
+}
+
+@media (max-width: 900px) {
     .gradient-container {
         display: none;
     }
     .schedule-container {
         padding: 30px;
+    }
+}
+
+@media (min-width: 910px) {
+    .schedule-form {
+        margin-left: 40px;
     }
 }
