@@ -48,28 +48,6 @@ const Schedule = () => {
             Name
           </label>
           <input type="text" placeholder="Enter your Name" id="name" />
-          <div className="dates">
-            <div className="departure-date">
-              <label htmlFor="departure-date" className="date-label">
-                Departure Date
-              </label>
-              <DatePicker
-                id="departure-date"
-                onChange={changeDate}
-                placeholder={"YY-MM-DD"}
-              />
-            </div>
-            <div className="return-date">
-              <label htmlFor="return-date" className="date-label">
-                Return Date
-              </label>
-              <DatePicker
-                id="return-date"
-                onChange={changeDate}
-                placeholder={"YY-MM-DD"}
-              />
-            </div>
-          </div>
           <label htmlFor="from" className="input-label">
             Flying From
           </label>
@@ -116,6 +94,31 @@ const Schedule = () => {
               }),
             }}
           />
+          <div className="dates">
+            <div className="departure-date">
+              <label htmlFor="departure-date" className="date-label">
+                Departure Date
+              </label>
+              <DatePicker
+                id="departure-date"
+                onChange={changeDate}
+                placeholder={"YY-MM-DD"}
+              />
+            </div>
+            <div className="return-date">
+              <label htmlFor="return-date" className="date-label">
+                Return Date
+              </label>
+              <DatePicker
+                id="return-date"
+                onChange={changeDate}
+                placeholder={"YY-MM-DD"}
+              />
+            </div>
+          </div>
+          <button type="submit" className="schedule-button">
+            Schedule Flight
+          </button>
         </form>
       </div>
     </div>

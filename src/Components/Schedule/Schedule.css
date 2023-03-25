@@ -107,6 +107,23 @@
     border-radius: 8px;
 }
 
+.schedule-button {
+    background: #007dfa;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    width: 100%;
+    border: none;
+    height: 48px;
+    margin-top: 30px;
+}
+
+.schedule-button:hover {
+    cursor: pointer;
+}
+
 .ant-picker:hover {
     border: 3px solid #e0effe;
 }
