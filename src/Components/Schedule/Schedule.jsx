@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState, useMemo } from "react";
 import "./Schedule.css";
 import leftGradient from "../../Assets/images/gradient-left.png";
 import rightGradient from "../../Assets/images/gradient-right.png";
 import logoImg from "../../Assets/images/logo.png";
+import Select from "react-select";
+import countryList from "react-select-country-list";
 
 const Schedule = () => {
+  const [value, setValue] = useState("");
+  const options = useMemo(() => countryList().getData(), []);
+
+  const changeHandler = (value) => {
+    setValue(value);
+  };
   return (
     <div className="schedule-container">
       <div className="gradient-container">
@@ -24,14 +32,33 @@ const Schedule = () => {
       <div className="schedule-form">
         <h5 className="schedule-flight-text">Schedule your Flight</h5>
         <form action="" className="schedule-info">
-          <label for="email" className="input-label">
+          <label htmlFor="email" className="input-label">
             Email
           </label>
           <input type="email" placeholder="Enter your Email" id="email" />
-          <label for="name" className="input-label">
+          <label htmlFor="name" className="input-label">
             Name
           </label>
           <input type="text" placeholder="Enter your Name" id="name" />
+          <label htmlFor="from">Flying From</label>
+          <Select
+            id="from"
+            className="select-option"
+            required
+            placeholder={"Where are you going"}
+            options={options}
+            value={value}
+            onChange={changeHandler}
+            styles={{
+              control: (baseStyles, state) => ({
+                ...baseStyles,
+                width: "100%",
+                border: "3px solid #e0effe",
+                height: "48px",
+                marginTop: "20px",
+              }),
+            }}
+          />
         </form>
       </div>
     </div>

@@ -48,6 +48,10 @@
     padding: 0px 20px;
 }
 
+.css-1u9des2-indicatorSeparator {
+    display: none;
+}
+
 .schedule-form {
     margin-top: 10%;
     margin: auto;
@@ -62,10 +66,18 @@
 
 .input-label {
     font-family: "Poppins", sans-serif;
-    margin-top: 20px;
     font-size: 17px;
 }
 
 .email-input::placeholder {
     font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 600px) {
+    .gradient-container {
+        display: none;
+    }
+    .schedule-container {
+        padding: 30px;
+    }
 }
