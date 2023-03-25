@@ -99,7 +99,7 @@ const HeroPage = () => {
           />
           <ul>
             <li className="active">All Flight</li>
-            <li>Schedule</li>
+            <li><a href="/schedule">Schedule</a></li>
             <li>
               <a href="/passengers">Passengers</a>
             </li>

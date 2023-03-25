@@ -33,8 +33,8 @@ function App() {
           </div>
           } />
           <Route path="/success" element={<SuccessPage />} />
-          <Route path="/schedule" element={<Passengers/>} />
-          <Route path="/passengers" element={<Schedule/>} />
+          <Route path="/schedule" element={<Schedule/>} />
+          <Route path="/passengers" element={<Passengers/>} />
         </Routes>
       </Router>
     </div>
