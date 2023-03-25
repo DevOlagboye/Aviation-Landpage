@@ -12,9 +12,13 @@ const Schedule = () => {
         <img src={rightGradient} alt="" className="right-gradient" />
         <img src={logoImg} alt="" className="schedule-logo" />
         <div>
-        <h4 className="schedule-text">Welcome.<br/>
-        Start your Journey now!<br/>
-        Kindly Schedule your Flight</h4>
+          <h4 className="schedule-text">
+            Welcome.
+            <br />
+            Start your Journey now!
+            <br />
+            Kindly Schedule your Flight!
+          </h4>
         </div>
       </div>
       <div className="schedule-form"></div>
