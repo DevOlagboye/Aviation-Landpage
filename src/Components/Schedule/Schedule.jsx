@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from "react";
 import "./Schedule.css";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 import { DatePicker } from "antd";
 import leftGradient from "../../Assets/images/gradient-left.png";
 import rightGradient from "../../Assets/images/gradient-right.png";
@@ -38,6 +39,7 @@ const Schedule = () => {
         </div>
       </div>
       <div className="schedule-form">
+        <AiOutlineArrowLeft className="back-icon" />
         <h5 className="schedule-flight-text">Schedule your Flight</h5>
         <form action="" className="schedule-info">
           <label htmlFor="email" className="input-label">
