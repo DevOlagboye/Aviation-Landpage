@@ -27,6 +27,11 @@
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
 }
+.menu-drawer ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: ease-in-out 0.6s;
+}
 
 .menu-drawer ul li.active {
     border-bottom: 1px #313ff7 solid;

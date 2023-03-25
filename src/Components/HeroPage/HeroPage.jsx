@@ -120,7 +120,7 @@ const HeroPage = () => {
             <li className="active" onClick={onClose}>
               All Flight
             </li>
-            <li onClick={onClose}>Schedule</li>
+            <li><a href="/schedule">Schedule</a></li>
             <li onClick={onClose}>Passengers</li>
             <li onClick={onClose}>Your Orders</li>
           </ul>
