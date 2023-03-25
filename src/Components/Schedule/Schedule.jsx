@@ -93,14 +93,26 @@ const Schedule = () => {
             }}
           />
           <div className="dates">
-            <label htmlFor="departure-date" className="input-label">
-              Departure Date
-            </label>
-            <DatePicker
-              id="departure-date"
-              onChange={changeDate}
-              placeholder={"Add Date"}
-            />
+            <div className="departure-date">
+              <label htmlFor="departure-date" className="date-label">
+                Departure Date
+              </label>
+              <DatePicker
+                id="departure-date"
+                onChange={changeDate}
+                placeholder={"YY-MM-DD"}
+              />
+            </div>
+            <div className="return-date">
+              <label htmlFor="return-date" className="date-label">
+                Return Date
+              </label>
+              <DatePicker
+                id="return-date"
+                onChange={changeDate}
+                placeholder={"YY-MM-DD"}
+              />
+            </div>
           </div>
         </form>
       </div>

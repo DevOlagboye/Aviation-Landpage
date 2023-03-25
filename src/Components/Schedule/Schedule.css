@@ -82,6 +82,16 @@
     font-family: "Poppins", sans-serif;
 }
 
+.dates {
+    display: flex;
+    gap: 50px;
+}
+
+.date-label {
+    display: block;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 600px) {
     .gradient-container {
         display: none;
