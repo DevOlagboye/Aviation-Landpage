@@ -42,7 +42,7 @@
     width: 100%;
     height: 48px;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-radius: 8px;
     border: 3px solid #e0effe;
     padding: 0px 20px;
@@ -52,11 +52,13 @@
     display: none;
 }
 
-element.style {
+.css-1ajit2d-control:hover {
+    border: 3px solid #e0effe;
 }
 
-.css-1ajit2d-control:hover{
-    border: 3px solid #e0effe;
+.css-1ajit2d-control {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .schedule-form {

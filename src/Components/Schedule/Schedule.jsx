@@ -44,7 +44,9 @@ const Schedule = () => {
             Name
           </label>
           <input type="text" placeholder="Enter your Name" id="name" />
-          <label htmlFor="from">Flying From</label>
+          <label htmlFor="from" className="input-label">
+            Flying From
+          </label>
           <Select
             id="from"
             className="select-option"
@@ -58,12 +60,15 @@ const Schedule = () => {
                 ...baseStyles,
                 width: "100%",
                 border: "3px solid #e0effe",
-                height: "52px",
-                marginTop: "20px",
+                height: "50px",
+                marginTop: "10px",
+                marginBottom: "20px",
               }),
             }}
           />
-          <label htmlFor="to">Flying to</label>
+          <label htmlFor="to" className="input-label">
+            Flying to
+          </label>
           <Select
             id="from"
             className="select-option"
@@ -77,8 +82,9 @@ const Schedule = () => {
                 ...baseStyles,
                 width: "100%",
                 border: "3px solid #e0effe",
-                height: "52px",
-                marginTop: "20px",
+                height: "50px",
+                marginTop: "10px",
+                marginBottom: "20px",
               }),
             }}
           />
