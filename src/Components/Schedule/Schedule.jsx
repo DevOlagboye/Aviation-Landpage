@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Schedule.css";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { DatePicker } from "antd";
@@ -22,6 +23,10 @@ const Schedule = () => {
   const travelTo = (traveltoValue) => {
     setTravelto(traveltoValue);
   };
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate("/");
+  };
   return (
     <div className="schedule-container">
       <div className="gradient-container">
@@ -39,7 +44,7 @@ const Schedule = () => {
         </div>
       </div>
       <div className="schedule-form">
-        <AiOutlineArrowLeft className="back-icon" />
+        <AiOutlineArrowLeft className="back-icon" onClick={handleNavigate} />
         <h5 className="schedule-flight-text">Schedule your Flight</h5>
         <form action="" className="schedule-info">
           <label htmlFor="email" className="input-label">
