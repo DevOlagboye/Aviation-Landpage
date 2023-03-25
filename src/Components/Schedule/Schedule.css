@@ -133,6 +133,16 @@
     border: 3px solid #e0effe;
 }
 
+.back-icon {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.back-icon:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 900px) {
     .gradient-container {
         display: none;
@@ -140,12 +150,6 @@
     .schedule-container {
         padding: 30px;
     }
-}
-
-.back-icon {
-    font-size: 18px;
-    margin-top: 30px;
-    margin-bottom: 20px;
 }
 
 @media (min-width: 910px) {
