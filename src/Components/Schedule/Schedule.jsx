@@ -22,7 +22,11 @@ const Schedule = () => {
         </div>
       </div>
       <div className="schedule-form">
-        <h5>Schedule your Flight</h5>
+        <h5 className="schedule-flight-text">Schedule your Flight</h5>
+        <form action="" className="schedule-info">
+          <label for="email">Email</label>
+          <input type="email" placeholder="Enter your Email" id="email" />
+        </form>
       </div>
     </div>
   );
