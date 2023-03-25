@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from "react";
 import "./Schedule.css";
+import { DatePicker } from "antd";
 import leftGradient from "../../Assets/images/gradient-left.png";
 import rightGradient from "../../Assets/images/gradient-right.png";
 import logoImg from "../../Assets/images/logo.png";
@@ -11,6 +12,9 @@ const Schedule = () => {
   const [traveltoValue, setTravelto] = useState("");
   const options = useMemo(() => countryList().getData(), []);
 
+  const changeDate = (date, dateString) => {
+    console.log(date, dateString);
+  };
   const changeHandler = (value) => {
     setValue(value);
   };
@@ -70,7 +74,7 @@ const Schedule = () => {
             Flying to
           </label>
           <Select
-            id="from"
+            id="to"
             className="select-option"
             required
             placeholder={"Where are you going to"}
@@ -88,6 +92,16 @@ const Schedule = () => {
               }),
             }}
           />
+          <div className="dates">
+            <label htmlFor="departure-date" className="input-label">
+              Departure Date
+            </label>
+            <DatePicker
+              id="departure-date"
+              onChange={changeDate}
+              placeholder={"Add Date"}
+            />
+          </div>
         </form>
       </div>
     </div>
