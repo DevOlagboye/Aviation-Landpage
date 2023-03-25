@@ -13,7 +13,7 @@ import Footer from "./Components/Footer/Footer";
 import SuccessPage from "./Components/SuccessPage/SuccessPage";
 import Passengers from "./Components/Passengers/Passengers";
 import Schedule from "./Components/Schedule/Schedule";
-import ClipLoader from "react-spinners/ClipLoader";
+import RingLoader from "react-spinners/RingLoader";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -25,32 +25,36 @@ function App() {
     }, 2000);
   }, []);
   return (
-    <div>
+    <div className="App">
       <Router>
         <Routes>
           <Route
             path="/"
             element={
               <div>
-                {loading ? <div>
-                  <ClipLoader
-        loading={loading}
-        size={30}
-        color={"#123abc"}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-      />
-                </div> : <div>
-                <HeroPage />
-                <Features />
-                <Cta />
-                <BookFlight />
-                <BestTravelers />
-                <Testimonials />
-                <Memories />
-                <Newsletter />
-                <Footer />
-                  </div>}
+                {loading ? (
+                  <div className="loader">
+                    <RingLoader
+                      loading={loading}
+                      size={70}
+                      color={"#123abc"}
+                      aria-label="Loading Spinner"
+                      data-testid="loader"
+                    />
+                  </div>
+                ) : (
+                  <div>
+                    <HeroPage />
+                    <Features />
+                    <Cta />
+                    <BookFlight />
+                    <BestTravelers />
+                    <Testimonials />
+                    <Memories />
+                    <Newsletter />
+                    <Footer />
+                  </div>
+                )}
               </div>
             }
           />
