@@ -38,6 +38,11 @@
     font-style: italic;
 }
 
+.schedule-info input::placeholder {
+    font-family: "Poppins", sans-serif;
+    color: #000;
+}
+
 .schedule-info input {
     width: 100%;
     height: 48px;
