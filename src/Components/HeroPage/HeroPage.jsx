@@ -40,6 +40,7 @@ const HeroPage = () => {
     } else {
     }
   };
+
   gsap.registerPlugin(ScrollTrigger);
   const changeDate = (date, dateString) => {
     console.log(date, dateString);
@@ -99,7 +100,9 @@ const HeroPage = () => {
           />
           <ul>
             <li className="active">All Flight</li>
-            <li><a href="/schedule">Schedule</a></li>
+            <li>
+              <a href="/schedule">Schedule</a>
+            </li>
             <li>
               <a href="/passengers">Passengers</a>
             </li>
@@ -120,7 +123,9 @@ const HeroPage = () => {
             <li className="active" onClick={onClose}>
               All Flight
             </li>
-            <li><a href="/schedule">Schedule</a></li>
+            <li>
+              <a href="/schedule">Schedule</a>
+            </li>
             <li onClick={onClose}>Passengers</li>
             <li onClick={onClose}>Your Orders</li>
           </ul>

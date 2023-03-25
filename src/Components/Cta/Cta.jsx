@@ -1,4 +1,5 @@
 import React, {useRef, useEffect}from 'react'
+import { useNavigate } from 'react-router-dom'
 import "./Cta.css"
 import ctaImage from "../../Assets/images/Cta-image.png"
 import ctaLine from "../../Assets/images/cta-line.png"
@@ -29,6 +30,10 @@ const Cta = () => {
             }
         })
     }, [])
+    const navigate = useNavigate()
+    const bookNavigate = () =>{
+        navigate("/schedule")
+      }
   return (
     <div className='cta-container' ref={el => {ctaContainers = el}}>
         <div className='cta-image'>
@@ -49,7 +54,7 @@ const Cta = () => {
             <div className='cta-more-details'>
                 <p><span className='circle'></span> It is a long established fact that a reader will be distracted <br/>by the readable content of a page when looking at its layout.</p>
             </div>
-            <button>Book Now</button>
+            <button onClick={bookNavigate}>Book Now</button>
         </div>
     </div>
   )
