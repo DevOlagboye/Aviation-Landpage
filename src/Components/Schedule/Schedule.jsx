@@ -54,7 +54,7 @@ const Schedule = () => {
                 ...baseStyles,
                 width: "100%",
                 border: "3px solid #e0effe",
-                height: "48px",
+                height: "52px",
                 marginTop: "20px",
               }),
             }}
