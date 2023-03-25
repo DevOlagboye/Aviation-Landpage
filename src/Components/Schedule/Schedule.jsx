@@ -43,7 +43,12 @@ const Schedule = () => {
           <label htmlFor="email" className="input-label">
             Email
           </label>
-          <input type="email" placeholder="Enter your Email" id="email" />
+          <input
+            type="email"
+            placeholder="Enter your Email"
+            id="email"
+            required
+          />
           <label htmlFor="name" className="input-label">
             Name
           </label>
