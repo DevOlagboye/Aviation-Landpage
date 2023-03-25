@@ -12,6 +12,7 @@ import Newsletter from "./Components/Newsletter/Newsletter";
 import Footer from "./Components/Footer/Footer";
 import SuccessPage from "./Components/SuccessPage/SuccessPage";
 import Passengers from "./Components/Passengers/Passengers"
+import Schedule from "./Components/Schedule/Schedule";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
           } />
           <Route path="/success" element={<SuccessPage />} />
           <Route path="/schedule" element={<Passengers/>} />
-          <Route path="/passengers" element={<Passengers/>} />
+          <Route path="/passengers" element={<Schedule/>} />
         </Routes>
       </Router>
     </div>
