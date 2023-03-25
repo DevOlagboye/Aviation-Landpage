@@ -24,8 +24,14 @@ const Schedule = () => {
       <div className="schedule-form">
         <h5 className="schedule-flight-text">Schedule your Flight</h5>
         <form action="" className="schedule-info">
-          <label for="email">Email</label>
+          <label for="email" className="input-label">
+            Email
+          </label>
           <input type="email" placeholder="Enter your Email" id="email" />
+          <label for="name" className="input-label">
+            Name
+          </label>
+          <input type="text" placeholder="Enter your Name" id="name" />
         </form>
       </div>
     </div>
