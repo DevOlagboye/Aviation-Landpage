@@ -6,4 +6,19 @@
     background: linear-gradient(0deg, #050a24, #050a24), #d9d9d9;
     width: 50%;
     height: 100vh;
+    position: relative;
+}
+
+.left-gradient {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+}
+
+.right-gradient {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
 }
