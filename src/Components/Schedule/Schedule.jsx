@@ -8,10 +8,14 @@ import countryList from "react-select-country-list";
 
 const Schedule = () => {
   const [value, setValue] = useState("");
+  const [traveltoValue, setTravelto] = useState("");
   const options = useMemo(() => countryList().getData(), []);
 
   const changeHandler = (value) => {
     setValue(value);
+  };
+  const travelTo = (traveltoValue) => {
+    setTravelto(traveltoValue);
   };
   return (
     <div className="schedule-container">
@@ -49,6 +53,25 @@ const Schedule = () => {
             options={options}
             value={value}
             onChange={changeHandler}
+            styles={{
+              control: (baseStyles, state) => ({
+                ...baseStyles,
+                width: "100%",
+                border: "3px solid #e0effe",
+                height: "52px",
+                marginTop: "20px",
+              }),
+            }}
+          />
+          <label htmlFor="to">Flying to</label>
+          <Select
+            id="from"
+            className="select-option"
+            required
+            placeholder={"Where are you going"}
+            options={options}
+            value={traveltoValue}
+            onChange={travelTo}
             styles={{
               control: (baseStyles, state) => ({
                 ...baseStyles,
