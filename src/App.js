@@ -37,7 +37,7 @@ function App() {
                     <RingLoader
                       loading={loading}
                       size={70}
-                      color={"#123abc"}
+                      color={"#000324"}
                       aria-label="Loading Spinner"
                       data-testid="loader"
                     />
@@ -59,7 +59,15 @@ function App() {
             }
           />
           <Route path="/success" element={<SuccessPage />} />
-          <Route path="/schedule" element={<Schedule />} />
+          <Route path="/schedule" element={loading ?<div className="loader">
+                    <RingLoader
+                      loading={loading}
+                      size={70}
+                      color={"#123abc"}
+                      aria-label="Loading Spinner"
+                      data-testid="loader"
+                    />
+                  </div> : <Schedule />} />
           <Route path="/passengers" element={<Passengers />} />
         </Routes>
       </Router>
