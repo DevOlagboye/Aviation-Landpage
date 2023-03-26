@@ -12,7 +12,7 @@ import countryList from "react-select-country-list";
 const Schedule = () => {
   const [value, setValue] = useState("");
   const [traveltoValue, setTravelto] = useState("");
-  const selectRef = useRef();
+  let selectRef = useRef();
   const options = useMemo(() => countryList().getData(), []);
 
   const changeDate = (date, dateString) => {
@@ -30,7 +30,10 @@ const Schedule = () => {
   };
   const selectHandle = (e) => {
     e.preventDefault();
-    console.log(selectRef.current.innerHTML);
+    console.log(selectRef);
+    if (selectRef.current.inputRef.value === "") {
+      selectRef.current.controlRef.style = "border: 3px solid red";
+    }
   };
   return (
     <div className="schedule-container">
