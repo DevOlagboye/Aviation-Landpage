@@ -44,7 +44,7 @@ const Schedule = () => {
           content: "Scheduling your Flight...",
           duration: 2.5,
         })
-        .then(() => message.success("Flight  Successfully", 2.5));
+        .then(() => message.success("Flight Scheduled Successfully", 2.5));
     }
   };
   return (
