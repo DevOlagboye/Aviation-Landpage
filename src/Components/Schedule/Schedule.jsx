@@ -29,7 +29,7 @@ const Schedule = () => {
     navigate("/");
   };
   const selectHandle = () =>{
-
+    console.log(selectRef.value)
   }
   return (
     <div className="schedule-container">
