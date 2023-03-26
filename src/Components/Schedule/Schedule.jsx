@@ -12,6 +12,7 @@ import countryList from "react-select-country-list";
 const Schedule = () => {
   const [value, setValue] = useState("");
   const [traveltoValue, setTravelto] = useState("");
+  const selectRef = useRef()
   const options = useMemo(() => countryList().getData(), []);
 
   const changeDate = (date, dateString) => {
@@ -67,6 +68,7 @@ const Schedule = () => {
             Flying From
           </label>
           <Select
+          ref={selectRef}
             id="from"
             className="select-option"
             required
