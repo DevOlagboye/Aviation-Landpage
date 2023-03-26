@@ -34,7 +34,11 @@ const Schedule = () => {
   const selectHandle = (e) => {
     e.preventDefault();
     selectRef.current.value = value;
-    if (selectRef.current.value === "") {
+    secondSelectRef.current.value = value;
+    if (
+      selectRef.current.value === "" &&
+      secondSelectRef.current.value === ""
+    ) {
       selectRef.current.controlRef.style = "border: 3px solid red";
     } else {
       console.log((selectRef.current.value = value));
@@ -109,6 +113,7 @@ const Schedule = () => {
             Flying to
           </label>
           <Select
+            ref={secondSelectRef}
             id="to"
             className="select-option"
             required
