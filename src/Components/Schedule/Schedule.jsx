@@ -14,6 +14,7 @@ const Schedule = () => {
   const [value, setValue] = useState("");
   const [traveltoValue, setTravelto] = useState("");
   let selectRef = useRef();
+  let secondSelectRef = useRef();
   const options = useMemo(() => countryList().getData(), []);
   const [messageApi, contextHolder] = message.useMessage();
 
