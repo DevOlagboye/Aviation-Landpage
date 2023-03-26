@@ -24,6 +24,7 @@ const Schedule = () => {
   const changeHandler = (value) => {
     setValue(value);
   };
+
   const travelTo = (traveltoValue) => {
     setTravelto(traveltoValue);
   };
@@ -34,15 +35,15 @@ const Schedule = () => {
   const selectHandle = (e) => {
     e.preventDefault();
     selectRef.current.value = value;
-    secondSelectRef.current.value = value;
-    if (
-      selectRef.current.value === "" &&
-      secondSelectRef.current.value === ""
-    ) {
+    secondSelectRef.current.value = traveltoValue;
+    if (selectRef.current.value === "") {
       selectRef.current.controlRef.style = "border: 3px solid red";
+    } else if (secondSelectRef.current.value === "") {
+      secondSelectRef.current.controlRef.style = "border: 3px solid red";
     } else {
-      console.log((selectRef.current.value = value));
+      console.log((secondSelectRef.current.value = traveltoValue));
       selectRef.current.controlRef.style = "border: 3px solid blue";
+      secondSelectRef.current.controlRef.style = "border: 3px solid blue";
       messageApi
         .open({
           type: "loading",
