@@ -41,10 +41,10 @@ const Schedule = () => {
       messageApi
         .open({
           type: "loading",
-          content: "Booking Flight...",
+          content: "Scheduling your Flight...",
           duration: 2.5,
         })
-        .then(() => message.success("Flight Booked Successfully", 2.5));
+        .then(() => message.success("Flight  Successfully", 2.5));
     }
   };
   return (
