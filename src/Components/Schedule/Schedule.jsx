@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Schedule.css";
 import { AiOutlineArrowLeft } from "react-icons/ai";
@@ -27,6 +27,9 @@ const Schedule = () => {
   const handleNavigate = () => {
     navigate("/");
   };
+  const selectHandle = () =>{
+
+  }
   return (
     <div className="schedule-container">
       <div className="gradient-container">
