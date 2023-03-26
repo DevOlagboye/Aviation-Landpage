@@ -12,7 +12,7 @@ import countryList from "react-select-country-list";
 const Schedule = () => {
   const [value, setValue] = useState("");
   const [traveltoValue, setTravelto] = useState("");
-  const selectRef = useRef()
+  const selectRef = useRef();
   const options = useMemo(() => countryList().getData(), []);
 
   const changeDate = (date, dateString) => {
@@ -28,9 +28,10 @@ const Schedule = () => {
   const handleNavigate = () => {
     navigate("/");
   };
-  const selectHandle = () =>{
-    console.log(selectRef.value)
-  }
+  const selectHandle = (e) => {
+    e.preventDefault();
+    console.log(selectRef.current.innerHTML);
+  };
   return (
     <div className="schedule-container">
       <div className="gradient-container">
@@ -68,7 +69,7 @@ const Schedule = () => {
             Flying From
           </label>
           <Select
-          ref={selectRef}
+            ref={selectRef}
             id="from"
             className="select-option"
             required
@@ -133,7 +134,11 @@ const Schedule = () => {
               />
             </div>
           </div>
-          <button type="submit" className="schedule-button">
+          <button
+            type="submit"
+            className="schedule-button"
+            onClick={selectHandle}
+          >
             Schedule Flight
           </button>
         </form>
