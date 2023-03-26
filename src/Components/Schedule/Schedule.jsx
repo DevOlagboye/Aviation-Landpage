@@ -32,9 +32,19 @@ const Schedule = () => {
   };
   const selectHandle = (e) => {
     e.preventDefault();
-    console.log(selectRef);
-    if (selectRef.current.inputRef.value === "") {
+    selectRef.current.value = value;
+    if (selectRef.current.value === "") {
       selectRef.current.controlRef.style = "border: 3px solid red";
+    } else {
+      console.log((selectRef.current.value = value));
+      selectRef.current.controlRef.style = "border: 3px solid blue";
+      messageApi
+        .open({
+          type: "loading",
+          content: "Booking Flight...",
+          duration: 2.5,
+        })
+        .then(() => message.success("Flight Booked Successfully", 2.5));
     }
   };
   return (
@@ -139,6 +149,7 @@ const Schedule = () => {
               />
             </div>
           </div>
+          {contextHolder}
           <button
             type="submit"
             className="schedule-button"
