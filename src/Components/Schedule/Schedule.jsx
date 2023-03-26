@@ -6,6 +6,7 @@ import { DatePicker } from "antd";
 import leftGradient from "../../Assets/images/gradient-left.png";
 import rightGradient from "../../Assets/images/gradient-right.png";
 import logoImg from "../../Assets/images/logo.png";
+import { message } from "antd";
 import Select from "react-select";
 import countryList from "react-select-country-list";
 
