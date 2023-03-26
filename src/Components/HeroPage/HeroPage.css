@@ -27,7 +27,8 @@
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
 }
-.menu-drawer ul li a{
+
+.menu-drawer ul li a {
     text-decoration: none;
     color: #fff;
     transition: ease-in-out 0.6s;
@@ -147,7 +148,7 @@
 
 .booking-container {
     background-color: #fff;
-    height: 210px;
+    height: 220px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -259,7 +260,7 @@
 
 .book-button {
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     background: #313ff7;
     color: #fff;
     padding: 15px 40px 15px 40px;
@@ -290,7 +291,7 @@
     .booking-container {
         width: 360px;
         margin: 80px auto 20px auto;
-        height: 450px;
+        height: 483px;
         border-top-right-radius: 0px;
     }
     .booking-features {
@@ -320,7 +321,7 @@
         width: 100%;
     }
     .booking-container {
-        height: 350px;
+        height: 360px;
     }
     .hero-menu img {
         margin-right: 10%;
@@ -335,7 +336,7 @@
 
 @media only screen and (min-width: 992px) {
     .booking-container {
-        height: 210px;
+        height: 230px;
     }
     .hero-menu img {
         width: 150px;
