@@ -59,7 +59,7 @@ const Schedule = () => {
           <label htmlFor="name" className="input-label">
             Name
           </label>
-          <input type="text" placeholder="Enter your Name" id="name" />
+          <input type="text" placeholder="Enter your Name" id="name" required />
           <label htmlFor="from" className="input-label">
             Flying From
           </label>
