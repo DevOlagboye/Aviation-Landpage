@@ -95,11 +95,7 @@ const Schedule = () => {
             onKeyUp={validateEmail}
             onChange={(e) => setEmail(e.target.value)}
           />
-          {emailError ? (
-            <span className="error">Your Email is Invalid</span>
-          ) : (
-            <span className="error">Email is Valid</span>
-          )}
+          {emailError && <p className="error">Your email is Invalid</p>}
           <label htmlFor="name" className="input-label">
             Name
           </label>
