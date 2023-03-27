@@ -14,6 +14,7 @@ import { validEmail } from "./regex";
 const Schedule = () => {
   const [value, setValue] = useState("");
   const [traveltoValue, setTravelto] = useState("");
+  const [email, setEmail] = useState("");
   let selectRef = useRef();
   let secondSelectRef = useRef();
   const options = useMemo(() => countryList().getData(), []);
