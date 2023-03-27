@@ -41,8 +41,9 @@ const Schedule = () => {
     e.preventDefault();
     selectRef.current.value = value;
     secondSelectRef.current.value = traveltoValue;
-    if (selectRef.current.value === "") {
+    if (emailRef.current.value === "") {
       selectRef.current.controlRef.style = "border: 3px solid red";
+      emailRef.current.style = "border: 1.5px solid red";
     } else if (secondSelectRef.current.value === "") {
       secondSelectRef.current.controlRef.style = "border: 3px solid red";
     } else {
@@ -63,12 +64,11 @@ const Schedule = () => {
     if (!validEmail.test(email)) {
       setEmailError(true);
       errorRef.current.innerHTML = "Invalid Email";
-    } else if (emailRef.current.value === "") {
-      errorRef.current.innerHTML = "";
+      errorRef.current.style = "color: red";
     } else {
       setEmailError(false);
-      errorRef.current.innerHTML = "Looks Good";
-      errorRef.style = "color: blue";
+      errorRef.current.innerHTML = "Looks Good!";
+      errorRef.current.style = "color: blue";
     }
   };
   return (

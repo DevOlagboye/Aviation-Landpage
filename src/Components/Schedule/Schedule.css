@@ -94,7 +94,6 @@
 .error {
     display: block;
     margin-bottom: 10px;
-    color: red;
 }
 
 .email-input::placeholder {
