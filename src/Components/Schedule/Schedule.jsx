@@ -9,6 +9,7 @@ import logoImg from "../../Assets/images/logo.png";
 import { message } from "antd";
 import Select from "react-select";
 import countryList from "react-select-country-list";
+import { validEmail } from "./regex";
 
 const Schedule = () => {
   const [value, setValue] = useState("");
