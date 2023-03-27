@@ -15,7 +15,7 @@ const Schedule = () => {
   const [value, setValue] = useState("");
   const [traveltoValue, setTravelto] = useState("");
   const [email, setEmail] = useState("");
-  const [emailError, setEmailError] = useState(false);
+  const [emailError, setEmailError] = useState(null);
   let selectRef = useRef();
   let secondSelectRef = useRef();
   const options = useMemo(() => countryList().getData(), []);
@@ -60,6 +60,8 @@ const Schedule = () => {
   const validateEmail = () => {
     if (!validEmail.test(email)) {
       setEmailError(true);
+    } else {
+      setEmailError(false);
     }
   };
   return (
@@ -92,9 +94,12 @@ const Schedule = () => {
             value={email}
             onKeyUp={validateEmail}
             onChange={(e) => setEmail(e.target.value)}
-            required
           />
-          {emailError ? <p>Your Email is Invalid</p> : <p>Email is Valid</p>}
+          {emailError ? (
+            <span className="error">Your Email is Invalid</span>
+          ) : (
+            <span className="error">Email is Valid</span>
+          )}
           <label htmlFor="name" className="input-label">
             Name
           </label>

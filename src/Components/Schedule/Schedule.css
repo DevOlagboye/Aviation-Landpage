@@ -90,6 +90,10 @@
     font-weight: 700;
 }
 
+.error {
+    display: block;
+}
+
 .email-input::placeholder {
     font-family: "Poppins", sans-serif;
 }
