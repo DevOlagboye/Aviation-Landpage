@@ -18,6 +18,8 @@ const Schedule = () => {
   const [emailError, setEmailError] = useState(null);
   let selectRef = useRef();
   let secondSelectRef = useRef();
+  let errorRef = useRef();
+  let emailRef = useRef()
   const options = useMemo(() => countryList().getData(), []);
   const [messageApi, contextHolder] = message.useMessage();
 
@@ -60,8 +62,12 @@ const Schedule = () => {
   const validateEmail = () => {
     if (!validEmail.test(email)) {
       setEmailError(true);
-    } else {
+      errorRef.current.innerHTML = "Invalid Email";
+    } else if(emailRef.current.value === "") {
+      errorRef.current.innerHTML = "";
+    }else {
       setEmailError(false);
+      errorRef.current.innerHTML = "Looks Good";
     }
   };
   return (
@@ -92,10 +98,11 @@ const Schedule = () => {
             placeholder="Enter your Email"
             id="email"
             value={email}
+            ref={emailRef}
             onKeyUp={validateEmail}
             onChange={(e) => setEmail(e.target.value)}
           />
-          {emailError && <p className="error">Your email is Invalid</p>}
+          <p className="error" ref={errorRef}></p>
           <label htmlFor="name" className="input-label">
             Name
           </label>
