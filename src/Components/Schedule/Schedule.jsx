@@ -42,14 +42,15 @@ const Schedule = () => {
     selectRef.current.value = value;
     secondSelectRef.current.value = traveltoValue;
     if (emailRef.current.value === "") {
-      selectRef.current.controlRef.style = "border: 3px solid red";
+      selectRef.current.controlRef.style = "border: 1.5px solid red";
       emailRef.current.style = "border: 1.5px solid red";
     } else if (secondSelectRef.current.value === "") {
-      secondSelectRef.current.controlRef.style = "border: 3px solid red";
+      secondSelectRef.current.controlRef.style = "border: 1.5px solid red";
     } else {
       console.log((secondSelectRef.current.value = traveltoValue));
-      selectRef.current.controlRef.style = "border: 3px solid blue";
-      secondSelectRef.current.controlRef.style = "border: 3px solid blue";
+      selectRef.current.controlRef.style = "border: 1.5px solid blue";
+      secondSelectRef.current.controlRef.style = "border: 1.5px solid blue";
+      emailRef.current.style = "border: 1.5px solid blue";
       messageApi
         .open({
           type: "loading",
