@@ -19,7 +19,7 @@ const Schedule = () => {
   let selectRef = useRef();
   let secondSelectRef = useRef();
   let errorRef = useRef();
-  let emailRef = useRef()
+  let emailRef = useRef();
   const options = useMemo(() => countryList().getData(), []);
   const [messageApi, contextHolder] = message.useMessage();
 
@@ -63,11 +63,12 @@ const Schedule = () => {
     if (!validEmail.test(email)) {
       setEmailError(true);
       errorRef.current.innerHTML = "Invalid Email";
-    } else if(emailRef.current.value === "") {
+    } else if (emailRef.current.value === "") {
       errorRef.current.innerHTML = "";
-    }else {
+    } else {
       setEmailError(false);
       errorRef.current.innerHTML = "Looks Good";
+      errorRef.style = "color: blue";
     }
   };
   return (
