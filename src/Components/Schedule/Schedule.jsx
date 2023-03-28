@@ -42,6 +42,8 @@ const Schedule = () => {
   };
   const selectHandle = (e) => {
     e.preventDefault();
+    console.log(name)
+    console.log(email)
     selectRef.current.value = value;
     secondSelectRef.current.value = traveltoValue;
     if (emailRef.current.value === "") {
@@ -115,7 +117,7 @@ const Schedule = () => {
             type="text"
             placeholder="Enter your Name"
             id="name"
-            onChange={(e) => e.target.value}
+            onChange={(e) => setName(e.target.value)}
           />
           <label htmlFor="from" className="input-label">
             Flying From
