@@ -75,17 +75,17 @@ const Schedule = () => {
           departureDate: departureDate,
           returnDate: returnDate,
         });
+        messageApi
+          .open({
+            type: "loading",
+            content: "Scheduling your Flight...",
+            duration: 2.5,
+          })
+          .then(() => message.success("Flight Scheduled Successfully", 2.5))
+          .then(() => navigate("/"));
       } catch (err) {
         console.error(err);
       }
-      messageApi
-        .open({
-          type: "loading",
-          content: "Scheduling your Flight...",
-          duration: 2.5,
-        })
-        .then(() => message.success("Flight Scheduled Successfully", 2.5));
-      // .then(() => navigate("/"));
     }
   };
   const validateEmail = () => {
