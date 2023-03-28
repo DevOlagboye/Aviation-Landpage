@@ -42,13 +42,15 @@ const Schedule = () => {
   };
   const selectHandle = (e) => {
     e.preventDefault();
-    console.log(name)
-    console.log(email)
+    console.log(name);
+    console.log(email);
     selectRef.current.value = value;
     secondSelectRef.current.value = traveltoValue;
+    emailRef.value = email;
     if (emailRef.current.value === "") {
-      selectRef.current.controlRef.style = "border: 1.5px solid red";
       emailRef.current.style = "border: 1.5px solid red";
+    } else if (selectRef.current.value === "") {
+      selectRef.current.controlRef.style = "border: 1.5px solid red";
     } else if (secondSelectRef.current.value === "") {
       secondSelectRef.current.controlRef.style = "border: 1.5px solid red";
     } else {
