@@ -18,6 +18,9 @@ const Schedule = () => {
   const [traveltoValue, setTravelto] = useState("");
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+  const departureDateRef = useRef();
+  const [departureDate, setDepartureDate] = useState("");
+  const [returnDate, setReturnDate] = useState("");
   const [emailError, setEmailError] = useState(null);
   let selectRef = useRef();
   let secondSelectRef = useRef();
@@ -46,6 +49,8 @@ const Schedule = () => {
     console.log(email);
     console.log(value.label);
     console.log(traveltoValue.label);
+    console.log(departureDate)
+    console.log(returnDate)
     selectRef.current.value = value;
     secondSelectRef.current.value = traveltoValue;
     emailRef.value = email;
@@ -178,7 +183,7 @@ const Schedule = () => {
               </label>
               <DatePicker
                 id="departure-date"
-                onChange={changeDate}
+                onChange={(date, dateString) => {setDepartureDate(dateString)}}
                 placeholder={"YY-MM-DD"}
               />
             </div>
@@ -188,7 +193,7 @@ const Schedule = () => {
               </label>
               <DatePicker
                 id="return-date"
-                onChange={changeDate}
+                onChange={(date, dateString) => {setReturnDate(dateString)}}
                 placeholder={"YY-MM-DD"}
               />
             </div>
