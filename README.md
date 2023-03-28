@@ -1,6 +1,6 @@
 # Inspiration behind this Project
 
-Saw this beautiful Aviation Website Design from the [Figma community](https://figma.com/community) and decided to implement it to brush up my React Experience
+Saw this beautiful Aviation Website Design from the [Figma community](https://figma.com/community) and decided to implement it to brush up my React Experience and also it is now a FullStack Application that runs with Firebase backend, Flight Schedules can be made now and admin can check each schedule made.
 
 Here is the design and the full Implementation is in the Repo
 
