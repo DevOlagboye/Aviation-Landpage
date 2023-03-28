@@ -44,6 +44,8 @@ const Schedule = () => {
     e.preventDefault();
     console.log(name);
     console.log(email);
+    console.log(value.label);
+    console.log(traveltoValue.label);
     selectRef.current.value = value;
     secondSelectRef.current.value = traveltoValue;
     emailRef.value = email;
@@ -64,8 +66,8 @@ const Schedule = () => {
           content: "Scheduling your Flight...",
           duration: 2.5,
         })
-        .then(() => message.success("Flight Scheduled Successfully", 2.5))
-        .then(() => navigate("/"));
+        .then(() => message.success("Flight Scheduled Successfully", 2.5));
+      // .then(() => navigate("/"));
     }
   };
   const validateEmail = () => {
