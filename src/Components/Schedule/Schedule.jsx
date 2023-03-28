@@ -43,14 +43,15 @@ const Schedule = () => {
   const handleNavigate = () => {
     navigate("/");
   };
-  const selectHandle = (e) => {
+  const schedulesCollectionRef = collection(db, "schedules");
+  const selectHandle = async (e) => {
     e.preventDefault();
     console.log(name);
     console.log(email);
     console.log(value.label);
     console.log(traveltoValue.label);
-    console.log(departureDate)
-    console.log(returnDate)
+    console.log(departureDate);
+    console.log(returnDate);
     selectRef.current.value = value;
     secondSelectRef.current.value = traveltoValue;
     emailRef.value = email;
@@ -65,6 +66,18 @@ const Schedule = () => {
       selectRef.current.controlRef.style = "border: 1.5px solid blue";
       secondSelectRef.current.controlRef.style = "border: 1.5px solid blue";
       emailRef.current.style = "border: 1.5px solid blue";
+      try {
+        await addDoc(schedulesCollectionRef, {
+          email: email,
+          name: name,
+          flyingFrom: value.label,
+          flyingTo: traveltoValue.label,
+          departureDate: departureDate,
+          returnDate: returnDate,
+        });
+      } catch (err) {
+        console.error(err);
+      }
       messageApi
         .open({
           type: "loading",
@@ -183,7 +196,9 @@ const Schedule = () => {
               </label>
               <DatePicker
                 id="departure-date"
-                onChange={(date, dateString) => {setDepartureDate(dateString)}}
+                onChange={(date, dateString) => {
+                  setDepartureDate(dateString);
+                }}
                 placeholder={"YY-MM-DD"}
               />
             </div>
@@ -193,7 +208,9 @@ const Schedule = () => {
               </label>
               <DatePicker
                 id="return-date"
-                onChange={(date, dateString) => {setReturnDate(dateString)}}
+                onChange={(date, dateString) => {
+                  setReturnDate(dateString);
+                }}
                 placeholder={"YY-MM-DD"}
               />
             </div>
