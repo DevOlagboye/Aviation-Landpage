@@ -10,11 +10,14 @@ import { message } from "antd";
 import Select from "react-select";
 import countryList from "react-select-country-list";
 import { validEmail } from "./regex";
+import { db } from "./firebaseConfig";
+import { addDoc, collection } from "firebase/firestore";
 
 const Schedule = () => {
   const [value, setValue] = useState("");
   const [traveltoValue, setTravelto] = useState("");
   const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
   const [emailError, setEmailError] = useState(null);
   let selectRef = useRef();
   let secondSelectRef = useRef();
@@ -108,7 +111,12 @@ const Schedule = () => {
           <label htmlFor="name" className="input-label">
             Name
           </label>
-          <input type="text" placeholder="Enter your Name" id="name" required />
+          <input
+            type="text"
+            placeholder="Enter your Name"
+            id="name"
+            onChange={(e) => e.target.value}
+          />
           <label htmlFor="from" className="input-label">
             Flying From
           </label>
