@@ -1,83 +1,82 @@
 .cta-container {
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    flex-wrap: wrap;
-    opacity: 0;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
 }
 
 .cta-details {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .cta-details h5 {
-    color: #313EF7;
-    font-family: "Montserrat", sans-serif;
-    font-size: 19px;
-    font-weight: 900;
-    margin-bottom: 30px;
+  color: #313ef7;
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-weight: 900;
+  margin-bottom: 30px;
 }
 
 .cta-details h4 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 
 .cta-details p {
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 20px;
-    font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  font-size: 17px;
 }
 
 .cta-more-details {
-    display: flex;
+  display: flex;
 }
 
 .cta-more-details span {
-    width: 12px;
-    height: 12px;
-    background: #313EF7;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 5px;
+  width: 12px;
+  height: 12px;
+  background: #313ef7;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .cta-details button {
-    background: #313EF7;
-    padding: 15px 40px 15px 40px;
-    color: #FFF;
-    border: none;
-    border-radius: 26px;
-    box-shadow: 3px 3px 15px 10px rgba(70, 70, 232, 0.166);
+  background: #313ef7;
+  padding: 15px 40px 15px 40px;
+  color: #fff;
+  border: none;
+  border-radius: 26px;
+  box-shadow: 3px 3px 15px 10px rgba(70, 70, 232, 0.166);
 }
 
 .cta-details button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-@media(max-width: 400px) {
-    .cta-details {
-        margin-left: 10px;
-    }
+@media (max-width: 400px) {
+  .cta-details {
+    margin-left: 10px;
+  }
 }
 
-@media(max-width: 600px) {
-    .cta-image img {
-        width: 350px;
-    }
-    .cta-details .cta-line {
-        width: 320px;
-    }
-    .cta-details h4 {
-        font-size: 20px;
-    }
-    .cta-details p {
-        font-size: 13px;
-    }
-    .cta-more-details {
-        width: 350px;
-    }
+@media (max-width: 600px) {
+  .cta-image img {
+    width: 350px;
+  }
+  .cta-details .cta-line {
+    width: 320px;
+  }
+  .cta-details h4 {
+    font-size: 20px;
+  }
+  .cta-details p {
+    font-size: 13px;
+  }
+  .cta-more-details {
+    width: 350px;
+  }
 }
