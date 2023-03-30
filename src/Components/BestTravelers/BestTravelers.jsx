@@ -6,8 +6,6 @@ import { bestTravelers } from "./data";
 
 const BestTravelers = () => {
   gsap.registerPlugin(ScrollTrigger);
-
-  let bestTravelerContainer = useRef(null);
   return (
     <div className="best-traveler-container">
       <h4>Best Travelers Of This Month</h4>
