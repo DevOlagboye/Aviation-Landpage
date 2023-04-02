@@ -18,6 +18,9 @@ const Newsletter = () => {
         .then(() => message.success("Thanks for subscribing...", 2.5));
     }
   };
+  const getInputValue = () =>{
+    console.log(newsLetterInput.value)
+  }
   return (
     <div className="newsletter-container">
       <h4>
@@ -28,6 +31,7 @@ const Newsletter = () => {
           ref={(el) => {
             newsLetterInput = el;
           }}
+          onChange={getInputValue}
           type="email"
           name=""
           id=""
