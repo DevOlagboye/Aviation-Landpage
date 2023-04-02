@@ -4,7 +4,7 @@ import HeroPage from "../HeroPage/HeroPage";
 const Passengers = () => {
   return (
     <div>
-      <HeroPage />
+     <h4>Currently Under Development</h4>
     </div>
   );
 };
