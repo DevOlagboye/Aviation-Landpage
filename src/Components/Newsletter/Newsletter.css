@@ -26,6 +26,7 @@
     border: none;
     border-radius: 20px;
     position: relative;
+    font-family: "Montserrat", sans-serif;
 }
 
 .newsletter-container input:focus {
